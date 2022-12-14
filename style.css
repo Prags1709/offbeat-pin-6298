@@ -1,0 +1,85 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); 
+
+#top-section{
+   width: 65%;
+   border: 1px solid red;
+   margin: auto;
+   
+  
+}
+
+#corona {
+    height: auto;  
+    text-align: left;
+    padding-left: 10px;
+    border: 1px solid red;
+    background-color: rgb(254,243,236);
+    align-items: center;
+    border-radius: 5px;
+    
+  }
+#top-section>div>p{
+  font-size: large;
+  
+}
+
+/* banner */
+#banner{
+  border: 1px solid red;
+  display: flex;
+  width: 65%;
+  margin: auto;
+}
+#first_block{
+  border: 1px solid green;
+  display: flex;
+  gap: 10px;
+}
+#second_block{
+  border: 1px solid green;
+  display: flex;
+  gap: 10px;
+}
+#thrid_block{
+  border: 1px solid green;
+  display: flex;
+  gap: 10px;
+}
+
+/* location-search */
+
+#location_search>input{
+  padding: 15px;
+  border: none;
+  
+}
+#location_search{
+  border: 3px solid rgb(255,210,97);
+  margin-top: 20px;
+  background-color: rgb(255,210,97);
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+.from,.to{
+ width: 27.99%;
+ text-align: center;
+
+}
+#location_search>button{
+ padding: 15px;
+ background-color: rgb(0,108,228);
+ border: none;
+ color: white;
+}
+.flight{
+  position: absolute;
+  margin-top: 10px;
+  
+}
+.arrow{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -13px;
+  background-color: white;
+
+}
