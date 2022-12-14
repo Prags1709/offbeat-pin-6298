@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- ---------------Top Nav Bar-------------------->
+        <div id="bottom_Nav_Bar" class="margin_side">
+            <div class="child_bottom_nav_bar">
+                <div class="mark_circle">1</div>
+                <p class="division_section">Ticket type</p>
+            </div>
+
+            <div class="child_bottom_nav_bar line_border"></div>
+
+            <div class="child_bottom_nav_bar">
+                <div class="mark_circle">2</div>
+                <p class="division_section">Who's flying?</p>
+            </div>
+
+            <div class="child_bottom_nav_bar line_border"></div>
+
+            <div class="child_bottom_nav_bar">
+                <div class="mark_circle">3</div>
+                <p class="division_section">Baggage and extras</p>
+            </div>
+
+            <div class="child_bottom_nav_bar line_border"></div>
+
+            <!-- <div class="child_bottom_nav_bar">
+                <div class="mark_circle">4</div>
+                <p class="division_section">Select your seat </p>
+            </div>
+
+            <div class="child_bottom_nav_bar line_border"></div> -->
+
+            <div class="child_bottom_nav_bar">
+                <div class="mark_circle">5</div>
+                <p class="division_section">Check and pay</p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="margin_side margin_top">
+            <div id="traveling_date">
+                <p>Round-trip</p>
+                <p>·</p>
+                <p>1 traveler</p>
+                <p>·</p>
+                <p> <span>Sun</span>, <span>Dec</span> <span>18</span> - <span>Sun</span>, <span>Dec</span>
+                    <span>25</span>
+                </p>
+            </div>
+            <div>
+                <h1 id="destination_name">Kolkata <span><i class="fa-solid fa-right-left"></i></span> Bangkok</h1>
+            </div>
+        </div>
+
+        <!-- <h2 class="margin_side">Select your ticket type</h2> -->
+        <div class="margin_side margin_top">
+            <h2 style="margin-bottom: 15px;">Select your ticket type</h2>
+            <div class="display_flex">
+                <div id="ticket_type_selection">
+                    <div>
+                        <div class=".border standard_ticket">
+                            <div class="padding">
+                                <input name="ticket" class="InputRadio-module__input___EczUY" type="radio"
+                                    value="standard_ticket" checked="">
+                                <label>Standard ticket</label>
+                            </div>
+                            <div class="padding">
+                                <div class="tick_mark">
+                                    <i class="fa-thin fa-solid fa-check"></i>
+                                    <p>Cheapest price</p>
+                                </div>
+                                <div class="tick_mark">
+                                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                                    <p>No need for flexibility - you're sure about your plans</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="total_amt padding">
+                                <p>Total Price</p>
+                                <p class="amount_color">INR<span>10000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flexibility_ticket">
+                            <div class="padding">
+                                <input name="ticket" class="InputRadio-module__input___EczUY" type="radio"
+                                    value="standard_ticket">
+                                <label>Flexible ticket</label>
+                            </div>
+                            <div class="padding">
+                                <div class="tick_mark bottom_gap">
+                                    <i class="fa-thin fa-solid fa-check"></i>
+                                    <p>Switch flights up to 24 hours before your departure time - with no penalties</p>
+                                </div>
+                                <div class="tick_mark bottom_gap">
+                                    <i class="fa-thin fa-solid fa-check"></i>
+                                    <p>Change your flight to another with the same airline for free, subject to availability</p>
+                                </div>
+                                <div class="tick_mark bottom_gap">
+                                    <i class="fa-thin fa-solid fa-check"></i>
+                                    <p>Only pay the difference if the new flight costs more than the original</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="total_amt padding">
+                                <p>Total Price</p>
+                                <p class="amount_color">INR<span>11000</span></p>
+                            </div>
+                        </div>
+                        <div id="terms_condition">
+                            <p>Flexible tickets are only available when you book your flight. For more details, see section 7 of our <a href="#">terms and conditions</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="render_amount_side">
+                    <div class="total_amt">
+                        <h4>Ticket (<span id="adult_count">2</span> adult <!-- child count -->)</h6>
+                        <p class="amount_color">INR<span>11000</span></p>
+                    </div>
+                    <div class="total_amt">
+                        <p>Flight fare</p>
+                        <p class="amount_color">INR<span>11000</span></p>
+                    </div>
+                    <div class="total_amt">
+                        <p>Flight fare</p>
+                        <p class="amount_color">INR<span>11000</span></p>
+                    </div>   
+                    <div class="total_amt" style="margin-top: 20px;">
+                        <h2>Total</h2>
+                        <h2 class="amount_color">INR<span>11000</span></h2>
+                    </div>
+                    <p>Includes taxes and charges</p>
+                    <p id="price_break_view" style="margin-top: 15px;">View price breakdown</p>
+                    <div class="flex">
+                        <div><h6>Genius</h6><span>Trip savings</span></div>
+                        <p class="amount_color">Save 10% on your stay</p>
+                        <p>Once you book your flights, enjoy a 10% discount at participating Genius properties worldwide by signing in to your account.</p>
+                    </div>                          
+                </div>
+            </div>
+        </div>
+        <!-- ---------------who is flying------------- -->
+        <div class="margin_side margin_top">
+            <h2 style="margin-bottom: 15px;">Who's flying?</h2>
+            <div class="display_flex">
+                <div class="contact-details">
+                    <div class="contact-info boxborder border_space"">
+                        <div>
+                            <h3>Contact details</h3>
+                            <p>Required</p>
+                            <br>
+                        </div>
+                        <div>
+                            <label for="emain">Contact email</label><br>
+                            <input type="email" required><br>
+                            <p>We'll send your flight confirmation here</p><br>
+                        </div>
+                        <div>
+                            <label for="number">Phone number</label><br>
+                            <input type="number" name="" id=""><br>
+                        </div>
+                        <div>
+                            <input name="markup" type="checkbox"
+                            value="standard_ticket" id="free_maseeges">
+                            <label for="free_maseeges">Get free text message updates about your flight</label>
+                        </div>
+                    </div>
+<!-------------------------------- forms------------------ -->
+                    <div class="adult-person boxborder border_space margin_top">
+                        <form id="forms">                
+                            <div>
+                                <h3>Adult <span>1</span></h3>
+                                <p>Required</p>
+                                <br>
+                            </div>
+<!-- --------------------first name and last name ------------------------->
+                            <div class="display_flex">
+                                <div>
+                                    <label>First names</label><br>
+                                    <input type="text" id="fname"><br>
+                                    <p>Enter exactly what's written on this traveler's travel document</p>
+                                </div>
+                                <div>
+                                    <label>Last names</label><br>
+                                    <input type="text" id="lname"> <br>
+                                    <p>Enter exactly what's written on this traveler's travel document</p>                 
+                                </div>
+                            </div>
+<!-- ---------------------gender date month year----------------- -->
+                            <div class="display_flex">
+                                <div style="width: 50%;">
+                                    <label>Gender specified on your travel document*</label>
+                                    <select id="Gender">
+                                        <option value="">Select your gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>                                                                                  
+                                </div>
+                                <div style="width: 50%;">
+                                    <label for="Date of birth">Date of birth</label>
+                                    <div class="display_flex">
+                                        <input type="number" id="date" placeholder="DD">
+                                        <select id="month">
+                                            <option value="">MM</option>
+                                            <option value="jan">01</option>
+                                            <option value="feb">02</option>
+                                            <option value="mar">03</option>
+                                            <option value="apr">04</option>
+                                            <option value="may">05</option>
+                                            <option value="jun">06</option>
+                                            <option value="jul">07</option>
+                                            <option value="aug">08</option>
+                                            <option value="sep">09</option>                                    
+                                            <option value="oct">10</option>
+                                            <option value="nov">11</option>
+                                            <option value="dec">13</option>
+                                        </select> 
+                                        <input type="number" id="year" placeholder="year">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="children"></div>
+                </div>
+<!--------------- --------------render amount------------------------ -->
+                <div class="render_amount_side">
+                    <div class="total_amt">
+                        <h4>Ticket (<span id="adult_count">2</span> adult <!-- child count -->)</h6>
+                        <p class="amount_color">INR<span>11000</span></p>
+                    </div>
+                    <div class="total_amt">
+                        <p>Flight fare</p>
+                        <p class="amount_color">INR<span>11000</span></p>
+                    </div>
+                    <div class="total_amt">
+                        <p>Flight fare</p>
+                        <p class="amount_color">INR<span>11000</span></p>
+                    </div>   
+                    <div class="total_amt" style="margin-top: 20px;">
+                        <h2>Total</h2>
+                        <h2 class="amount_color">INR<span>11000</span></h2>
+                    </div>
+                    <p>Includes taxes and charges</p>
+                    <p id="price_break_view" style="margin-top: 15px;">View price breakdown</p>
+                    <div class="flex">
+                        <div><h6>Genius</h6><span>Trip savings</span></div>
+                        <p class="amount_color">Save 10% on your stay</p>
+                        <p>Once you book your flights, enjoy a 10% discount at participating Genius properties worldwide by signing in to your account.</p>
+                    </div>                          
+                </div>
+            </div>
+        </div>
+        <div class="margin_side margin_top" id="buttons">
+            <button id="back">< Back</button>
+            <button id="next">Next</button>
+        </div>
+    </section>
+</body>
+
+</html>
