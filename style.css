@@ -1,22 +1,36 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); 
 
+#container{
+  background-color: rgb(245,245,245);
+ 
+}
+h2{
+  font-weight: 700;
+}
+h3{
+  font-weight: 700;
+}
+
 #top-section{
    width: 65%;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    margin: auto;
    
   
 }
 
 #corona {
-    height: auto;  
+    height: 50px;  
+    align-items: center;
     text-align: left;
     padding-left: 10px;
+    padding-top: 10px;
     border: 1px solid red;
     background-color: rgb(254,243,236);
-    align-items: center;
     border-radius: 5px;
-    
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 #top-section>div>p{
   font-size: large;
@@ -25,25 +39,36 @@
 
 /* banner */
 #banner{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   width: 65%;
   margin: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding-top: 50px;
 }
 #first_block{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   gap: 10px;
 }
 #second_block{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   gap: 10px;
 }
 #thrid_block{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   gap: 10px;
+}
+.first{
+  /* font-size: large; */
+}
+#whole_width{
+  height: 180px;
+  background-color: rgb(245,245,245);
+ 
 }
 
 /* location-search */
@@ -61,7 +86,7 @@
   margin-bottom: 15px;
 }
 .from,.to{
- width: 27.99%;
+ width: 28.2%;
  text-align: center;
 
 }
@@ -82,4 +107,14 @@
   margin-left: -13px;
   background-color: white;
 
+}
+#mid-top{
+  width: 65%;
+  margin: auto;
+  margin-top: 80px;
+
+}
+#lower-mid{
+  width: 65%;
+  margin: auto;
 }
