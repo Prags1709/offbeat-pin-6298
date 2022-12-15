@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight.com</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+
+    <div id="top-section">
+
+    <div id="corona">
+        <p style="font-size: medium;">Coronavirus (COVID-19) may affect your travel plans. <a href="https://www.booking.com/covid-19.html?lang=en-us&aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Apro4ZwGwAIB0gIkM2ZlMDZmYTgtZGVmZi00MzJhLWE3ZjItN2FhYmYyNDBjZWRi2AIG4AIB">learn more</a> </p>
+    </div>
+
+    <div>
+    <h2>Compare and book flights with ease</h2>
+    <p>Discover your next dream destination</p>
+    </div>
+
+    <form class="radio-btn">
+        <input type="radio" class="btn" name="check" value="Round-trip"/><span>Round-trip</span>
+        <input type="radio" class="btn" name="check" value="One-way"><span>One-way</span>
+        <input type="radio" class="btn" name="check" value="Multi-city"><span>Multi-city</span>
+
+        <select name="reservations" id="class">
+            <option value="economy">Economy</option>
+            <option value="premium-economy">Premium-economy</option>
+            <option value="business">Business</option>
+            <option value="first-class">First-class</option>
+          </select>
+          
+          <select name="age" id="age">
+            <option value="Adult">Adult</option>
+            <option value="Child">Child</option>
+          </select>
+        
+           
+          
+    </form>
+
+    <div id="location_search">
+        <span class="material-symbols-outlined flight">flight_takeoff </span>
+           <input class="from" type="text" placeholder="Where from?">
+
+           <span class="material-symbols-outlined arrow"> swap_horiz </span>
+           <input class="to" type="text" placeholder="Where to?">
+           <input type="date" value="Saterday-december-21">
+           <input type="date">
+           <button>Search</button>
+    </div>
+
+    <label class="container">
+        <input type="checkbox" checked="checked">
+        <span class="checkmark">Direct flights only</span>
+        
+      </label>
+
+</div>
+</div>
+</div>
+
+<!-- mid-top section -->
+
+ <div id="mid-top">
+    <h3>Trending Cities</h3>
+    <p>Book flights to a destination popular with travelers from India</p>
+
+    <!-- owl crousal -->
+    <!-- <div class="owl-carousel owl-theme"> -->
+      <!-- <img src="https://q-xx.bstatic.com/xdata/images/city/square210/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o=
+      " alt="newdelhi">  
+      <img src="https://q-xx.bstatic.com/xdata/images/city/square210/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o=
+      " alt="newdelhi">
+      <img src="https://q-xx.bstatic.com/xdata/images/city/square210/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o=
+      " alt="newdelhi">
+      <img src="https://q-xx.bstatic.com/xdata/images/city/square210/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o=
+      " alt="newdelhi"> -->
+     
+ </div>
+ <!-- banner -->
+ <div id="whole_width">
+ <div id="banner">
+  <div id="first_block">
+    <div>
+        <span class="material-symbols-outlined first">
+            manage_search
+            </span>
+    </div>
+    <div id="content">
+        <h6>Huge Selection</h6>
+        <p>Easily compare thousands of flights, all in one place</p>
+    </div>
+  </div>
+
+  <div id="second_block">
+    <div>
+        <span class="material-symbols-outlined">
+            search_check
+            </span>
+    </div>
+    <div>
+        <h6>No hidden fees</h6>
+        <p>Always know exactly what you’re paying for</p>
+    </div>
+  </div>
+
+  <div id="thrid_block">
+    <div>
+        <span class="material-symbols-outlined">
+            airplane_ticket
+            </span>
+    </div>
+    <div>
+        <h6>More flexibility</h6>
+        <p>Keep your travel dates open with flexible plane ticket options</p>
+    </div>
+  </div>
+
+ </div>
+
+ <!-- lower-mid section -->
+
+ <div id="lower-mid">
+    <h2>Fly worldwide with Voyage.com</h2>
+    <p>Flights from wherever you are to wherever you want to go</p>
+   
+ 
+ 
+ <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Asia</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">North america</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Europe</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+  </div>
+
+ </div>
+</body>
+</html>
+
+<script src="flight.js"></script>
