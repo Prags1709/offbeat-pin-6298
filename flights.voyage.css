@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); 
+
+#container{
+  background-color: rgb(245,245,245);
+  padding: 20px 0px;
+ 
+}
+h4{
+  font-weight: 700;
+}
+h6{
+  font-weight: 700;
+}
+.btn{
+  margin-right: 5px;
+  size: 50px;
+}
+#economy,#age{
+  background-color: rgb(245,245,245);
+}
+
+#top-section{
+   width: 65%;
+   /* border: 1px solid red; */
+   margin: auto;
+   
+  
+}
+
+#top-section>div>p{
+  font-size: large;
+  
+}
+form{
+    margin-top: 30px;
+}
