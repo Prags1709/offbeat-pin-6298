@@ -499,7 +499,7 @@
  /****************** Browse by property type ***************/
 
  #browse_carousel{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width:80%;
     height: 250px;
     margin: auto; 
@@ -513,16 +513,39 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    transition: all 500ms; 
+    transition: all 1s; 
 }
 .browse_img_card{
     width:260px;
     height: 250px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+.browse_img_card:hover{
+    cursor: pointer;
 }
 .browse_img_card img{
     width: 100%;
     height: 70%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.browse_img_card img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
+.browse_heading{
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #262626;
+}
+.browse_desc{
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6b6b6b;
 }
 #ltbrarrow, #rtbrarrow {
     top: 50%;
@@ -555,3 +578,707 @@
 #rtbrarrow:hover{
     background-color: #8bafe0;
  }
+
+ /************* Premium Deals ************/
+
+ #Pre_deals{
+    border: 1px solid gray;
+    width:80%;
+    height: 150px;
+    margin: auto; 
+    margin-top: 50px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+ }
+ #Pre_deals img{
+    margin-left: 20px;
+    width:100px;
+    height: 100px;
+ }
+ #deals_container{
+    border: 0px solid black;
+    width: 60%;
+    height: 150px;
+    margin-left: 20px;
+ }
+ #deals_container_heading{
+    margin-left: 20px;
+    font-style: normal;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-weight: 700;
+    color: #262626;    
+ }
+
+ #deals_container_desc{
+    margin-left:20px;
+    font-style: normal;
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-weight: 400;
+    color: #262626; 
+ }
+ #deals_container_input{
+    margin-left: 20px;
+    width: 300px;
+    height: 25px;
+    border: 1px solid rgb(198, 154, 240);
+ }
+ #deals_container_input:hover{
+    cursor: pointer;
+ }
+ #deals_container_btn{
+    margin-left: 10px;
+    width:100px;
+    height:30px;
+    background-color: #fff;
+    color: #0071c2;
+    border: 1px solid #0071c2;
+ }
+ #deals_container_btn:hover{
+    cursor: pointer;
+    background-color: rgb(210, 229, 236);
+ }
+
+ #deals_close_btn{
+    border: 0px solid black;
+    width: 40px;
+    height: 40px;
+    margin-left: 230px;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+ }
+ #deals_close_btn:hover{
+    cursor: pointer;
+ }
+ #deal_icons_btn{
+    color: #000;
+    font-size: 40px;
+ }
+
+ /******************* Travel around Europe ************************/
+
+ #travel_options{
+    border: 0px solid black;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+ }
+
+ #travel_options div{
+    /* border: 1px solid red; */
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+ }
+ #travel_options div:hover{
+    cursor: pointer;
+    background-color: #d3d6d8;
+ }
+ #travel_options div:nth-child(1){
+    width: 130px;
+    border: 1px solid #0071c2; 
+    color: #0071c2;
+ }
+ #travel_options div:nth-child(2){
+    width: 120px;
+    border: 1px solid #0071c2;
+    background-color:rgb(231, 241, 245);
+ }
+ #travel_options div:nth-child(6){
+    width: 120px;
+ }
+ #travel_icons_btn{
+    color: #000;
+ }
+ #travel_options_title{
+    font-size: 16px;
+    margin-left:5px;
+ }
+
+ /*************************** Travel around Europe Caruosel *******************************/
+
+#Travel_carousel{
+    /* border: 1px solid black; */
+    width:80%;
+    height: 300px;
+    margin: auto; 
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center; 
+}
+#Travel_carousel_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 1s; 
+}
+.Travel_carousel_card{
+    width:260px;
+    height: 300px;
+    /* border: 1px solid red;   */
+}
+.Travel_carousel_card:hover{
+    cursor: pointer;
+}
+.Travel_carousel_card img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Travel_carousel_card img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
+.travel_heading{
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 10px;
+    color: #262626;  
+}
+.travel_desc, .tarvel_price{
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    color: #6b6b6b;
+}
+.tarvel_price span{
+   font-size: 16px;
+   font-weight: 700;
+   color: #000;
+}
+
+#ltTRarrow, #rtTRarrow{
+    top: 50%;
+    border: 0px solid red;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    color: rgb(133, 126, 126);
+    border-radius: 50%;
+    transform: translateY(-50%);  
+}
+
+#ltTRarrow{
+    left: 0px;
+ }
+ #ltTRarrow:hover{
+     background-color: #8bafe0;
+  }
+ 
+ #rtTRarrow{
+   right: 0px;
+ }
+ #rtTRarrow:hover{
+     background-color: #8bafe0;
+  }
+
+  /**************************** Stay at our top unique properties ******************************/
+  #unique_properties_carousel{
+     /* border: 1px solid black; */
+     width:80%;
+     height: 300px;
+     margin: auto; 
+     margin-top: 20px;
+     display: flex;
+     position: relative;
+     overflow: hidden;
+     align-items: center
+  }
+
+  #unique_properties_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 1s; 
+  }
+
+  .unique_properties_card{
+    width:260px;
+    height: 300px;
+    /* border: 1px solid red;   */
+  }
+
+  .unique_properties_card:hover{
+     cursor: pointer;
+  }
+  .unique_properties_card img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .unique_properties_card img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+  }
+  .unique_properties_heading{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 10px;
+    color: #262626;  
+  }
+
+  .unique_properties_desc, .unique_properties_review{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    color: #6b6b6b;
+  }
+
+  .unique_properties_review span{
+    padding: 2px;
+    background-color: #003580;
+    color: #fff;
+  }
+
+  #ltuparrow, #rtuparrow{
+    top: 50%;
+    border: 0px solid red;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    color: rgb(133, 126, 126);
+    border-radius: 50%;
+    transform: translateY(-50%);  
+}
+
+#ltuparrow{
+    left: 0px;
+ }
+ #ltuparrow:hover{
+     background-color: #8bafe0;
+  }
+ 
+ #rtuparrow{
+   right: 0px;
+ }
+ #rtuparrow:hover{
+     background-color: #8bafe0;
+  }
+  
+  
+  /******************************** Get inspiration for your next trip ************************/
+  #Get_inspiration_headDiv{
+     /* border: 1px solid black; */
+     width:80%;
+     height:50px;
+     margin: auto; 
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+  .Get_inspiration_desc{
+    margin-right: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 10px;
+    color: #0071c2; 
+  }
+
+  #inspiration_carousel{
+    /* border: 1px solid black; */
+    width:80%;
+    height: 350px;
+    margin: auto; 
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center
+  }
+
+  #inspiration_carousel_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 1s; 
+  }
+
+  .inspiration_carousel_card{
+    width:290px;
+    height: 350px;
+    /* border: 1px solid red;   */
+  }
+  .inspiration_carousel_card:nth-child(1){
+    width:500px;
+    background-image: url("https://cf.bstatic.com/xdata/images/xphoto/540x405/180173480.webp?k=6ea6aa39bf8daaf82862915b72888bcf8ce68f0641053f336fcdd9d842b29d9d&o=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(0.2px);
+    background-color: rgba(0, 0, 0, 0.24);
+  }
+  #inspiration_carousel_card1:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+  }
+  #carousel_card_heading{
+    margin-top: 250px;
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #fff;  
+
+  }
+  #carousel_card_desc{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color:#fff;  
+  }
+  .inspiration_carousel_card:hover{
+    cursor: pointer;
+  }
+  .inspiration_carousel_card img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .inspiration_carousel_card img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+  }
+  .inspiration_carousel_card_heading{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #262626;  
+  }
+
+  .inspiration_carousel_card_desc{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6b6b6b;
+  }
+  #ltinsarrow, #rtinsarrow{
+    top: 50%;
+    border: 0px solid red;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    color: rgb(133, 126, 126);
+    border-radius: 50%;
+    transform: translateY(-50%); 
+  }
+  #ltinsarrow{
+    left: 0;
+  }
+  #ltinsarrow:hover{
+    background-color: #8bafe0;
+  }
+  #rtinsarrow{
+    right: 0;
+  }
+  #rtinsarrow:hover{
+    background-color: #8bafe0;
+  }
+
+  /*  Homes guests love */
+
+  #home_guests_carousel{
+    /* border: 1px solid black; */
+    width:80%;
+    height: 400px;
+    margin: auto; 
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center
+  }
+  #home_guests_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 1s; 
+  }
+  .home_guests_card{
+    width:260px;
+    height: 400px;
+    /* border: 1px solid red;   */
+  }
+  .home_guests_card:hover{
+    cursor: pointer;
+  }
+
+  .home_guests_card img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .home_guests_card img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+  }
+  .home_guests_heading{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #262626;  
+  }
+
+  .home_guests_desc, .home_guests_review, .home_guests_price{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #6b6b6b; 
+  }
+
+  .home_guests_review span{
+    padding: 2px;
+    background-color: #003580;
+    color: #fff;
+  }
+  .home_guests_price span{
+   color:#000;
+   font-size: 16px;
+   font-weight: 700;
+  }
+
+  #lthgarrow, #rthgarrow{
+    top: 50%;
+    border: 0px solid red;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    color: rgb(133, 126, 126);
+    border-radius: 50%;
+    transform: translateY(-50%);  
+}
+
+#lthgarrow{
+    left: 0px;
+ }
+ #lthgarrow:hover{
+     background-color: #8bafe0;
+  }
+ 
+ #rthgarrow{
+   right: 0px;
+ }
+ #rthgarrow:hover{
+     background-color: #8bafe0;
+  }
+
+  /************************* Connect with other travellers **************************/
+  #travellers_carousel{
+    /* border: 1px solid black; */
+    width:80%;
+    height: 350px;
+    margin: auto; 
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+  }
+  #travllers_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.5s;  
+  }
+  .travllers_card{
+    width:260px;
+    height: 350px;
+    /* border: 1px solid red;   */
+  }
+  .travllers_card img{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .travllers_card_heading{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 10px;
+    color: #262626;  
+  }
+  .travllers_card_desc, .travllers_card_fact{
+    margin-left: 10px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    color: #6b6b6b; 
+  }
+
+  #ltCTarrow, #rtCTarrow{
+    top: 50%;
+    border: 0px solid red;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    color: rgb(133, 126, 126);
+    border-radius: 50%;
+    transform: translateY(-50%);  
+}
+
+#ltCTarrow{
+    left: 0px;
+ }
+ #ltCTarrow:hover{
+     background-color: #8bafe0;
+  }
+ 
+ #rtCTarrow{
+   right: 0px;
+ }
+ #rtCTarrow:hover{
+     background-color: #8bafe0;
+  }
+
+
+  /************************** Get instant discounts ***********************/
+#get_discounts{
+    border: 1px solid gray;
+    width:80%;
+    height: 230px;
+    margin: auto; 
+    margin-top: 50px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center; 
+}
+#get_discounts img{
+    margin-left: 20px;
+    width:150px;
+    height: 150px;  
+}
+#discounts_container{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 200px;
+    margin-left: 20px;
+}
+#discounts_container_heading{
+    margin-left: 20px;
+    font-style: normal;
+    font-size: 26px;
+    font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    color: #262626;   
+}
+#discounts_container_desc{
+    margin-left:20px;
+    font-style: normal;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-weight: 400;
+    color: #262626;   
+}
+#discounts_container_Signinbtn{
+    margin-left: 10px;
+    width:80px;
+    height:30px;
+    background-color: #fff;
+    color: #0071c2;
+    border: 1px solid #0071c2; 
+}
+#discounts_container_Signinbtn:hover{
+    cursor: pointer;
+    background-color: rgb(210, 229, 236);;
+}
+#discounts_container_regbtn{
+    margin-left: 10px;
+    width:80px;
+    height:30px;
+    background-color: #fff;
+    color: #0071c2;
+    /* border: 1px solid #0071c2;  */
+    border: none;
+}
+#discounts_container_regbtn:hover{
+    cursor: pointer;
+    background-color: rgb(210, 229, 236);;
+}
+
+/******************* Destinations we love ****************************/
+
