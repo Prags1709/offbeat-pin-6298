@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/homebody.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <!-- Navbar  -->
@@ -52,11 +53,133 @@
 
         <!-- Search Bar -->
         <div id="search_container">
-        <input type="text" name="Search Place" id="Search_place" placeholder="Where are you going" />
-        <div></div>
-        <div></div>
+            <div id="searchbar"><span id="searchicons" class="material-symbols-outlined">bed</span> <input type="text" placeholder="Where are you going?"> </div>
+            <div id="calender"><span id="searchicons" class="material-symbols-outlined">calendar_month</span><p>Check-in</p> <span>-</span> <p>Check-out</p></div>
+            <div id="people"><span id="searchicons" class="material-symbols-outlined">person</span><p>2 Adults</p> <p>.</p> <p>0 Childern</p> <p>.</p> <p>1 Room</p><span id="searchicons" class="material-symbols-outlined">unfold_more</span></div>
+            <div id="srchbtn"><button>SEARCH</button></div>
+        </div>
+
+        <div id="chkbox">
+            <input type="checkbox" id="chkbox_size">
+            <p> I am travelling for Work</p>
+        </div>
+
+        <!-- Corona Support -->
+        <div id="corona_support">
+        <div id="cpleft"><span id="cpicons" class="material-symbols-outlined">info</span> <p id="cpleft_text">Coronavirus (COVID-19) Support</p> </div>
+        <div id="cpright"><span id="searchicons" class="material-symbols-outlined">expand_more</span></div>
+        </div>
+
+
+        <!--  offer carousel -->
+        <h1 class="headtag">Offers</h1>
+        <p class="headtag_desc">Promotions, deals and special offers for you</p>
+        
+        <div id="offer_carousel">
+            <div class="container">
+                <div class="offers" id="c1">
+                    <div id="img_container1">
+                     <p class="img_container_heading">New year, new adventures</p>
+                     <p class="img_container_desc">Save 15% or more when you book and stay before 31 March 2023</p>
+                     <button class="img_container_btn">Find Early 2023 Deals</button>
+                   </div>
+                </div>
+            
+                <div class="offers" id="c2">
+                    <div id="img_container2">
+                     <p id="img_container_heading" class="img_container_heading">Fly away to your dream holiday</p>
+                     <p  id="img_container_desc" class="img_container_desc">Get inspired, compare and book flights with more flexibility</p>
+                     <button class="img_container_btn">Search For Flights</button>
+                    </div>
+                </div>
+
+                <div class="offers" id="c3">
+                    <div id="img_container3">
+                     <p class="img_container_heading">Save 15% with Late Escape Deals</p>
+                     <p class="img_container_desc">Tick one more destination off your wishlist</p>
+                     <button class="img_container_btn">Explore Deals</button>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-angle-left" id="ltarrow"></i>
+            <i class="fa-solid fa-angle-right" id="rtarrow"></i>
+        </div>
+
+
+        <!-- Explore Carousel -->
+        <h1 class="headtag">Explore India</h1>
+        <p class="headtag_desc">These popular destinations have a lot to offer</p>
+       
+        <div id="explore_carousel">
+           <div id="explore_container">
+              <div class="explore_carousel_img_container"><img src="https://r-xx.bstatic.com/xdata/images/city/250x250/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o="><p class="explore_heading">Mumbai</p><p class="explore_desc">1,650 Properties</p></div>
+              <div class="explore_carousel_img_container"><img src="https://r-xx.bstatic.com/xdata/images/city/250x250/684657.jpg?k=66dc5035b43e9bb86b756e381e4fec2558064af4a63a8af17836725a854c03ee&o="><p class="explore_heading">Jaipur</p><p class="explore_desc">1,558 Properties</p></div>
+              <div class="explore_carousel_img_container"><img src="https://q-xx.bstatic.com/xdata/images/city/250x250/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o="><p class="explore_heading">Banglore</p><p class="explore_desc">2,040 Properties</p></div>
+              <div class="explore_carousel_img_container"><img src="https://q-xx.bstatic.com/xdata/images/city/250x250/684938.jpg?k=9d07ff707ce59768769b5e9a5381a4c705d921209dafd8fd0e2f1a6acdf0c68a&o="><p class="explore_heading">Udaipur</p><p class="explore_desc">817 Properties</p></div>
+              <div class="explore_carousel_img_container"><img src="https://r-xx.bstatic.com/xdata/images/city/250x250/684716.jpg?k=4c3f55236cffa6597afa0ef11a9f012636f535bf9cc6c0e2ed8142e01fa14766&o="><p class="explore_heading">Manali</p><p class="explore_desc">873 Properties</p></div>
+              <div class="explore_carousel_img_container"><img src="https://r-xx.bstatic.com/xdata/images/city/250x250/684769.jpg?k=146b18e42b9eb74078f2e80e07e573e8dbac879208b86bae451f99882f566a99&o="><p class="explore_heading">Pondicherry</p><p class="explore_desc">690 Properties</p></div>
+              <div class="explore_carousel_img_container"><img src="https://r-xx.bstatic.com/xdata/images/region/250x250/68606.jpg?k=4b43b9128b79beaab4ca2e8c038ddf5709b0b90608afbca222cfbe08fabda7d2&o="><p class="explore_heading">North Goa</p><p class="explore_desc">3,905 Properties</p></div>
+              <div class="explore_carousel_img_container"><img src="https://r-xx.bstatic.com/xdata/images/city/250x250/684682.jpg?k=30cf9de93f2a0f87eed7d2d0d9b3e6eccd5dcf3a4b68b4e0151c0800ddc84af7&o="><p class="explore_heading">Lonavala</p><p class="explore_desc">749 Properties</p></div>
+           </div> 
+           <i class="fa-solid fa-angle-left" id="ltexarrow"></i>
+           <i class="fa-solid fa-angle-right" id="rtexarrow"></i>
         </div>
         
+
+        <!-- Collage -->
+
+        <div id="collage1">
+            <div id="collage_img1"><p class="collage_heading">Leeds <img src="https://cf.bstatic.com/static/img/flags/24/gb/b2f01d4fd94cb1420fcdbbef62c06ade1026fbbd.png" alt=""></p></div>
+            <div id="collage_img2"><p class="collage_heading">Manchester <img src="https://cf.bstatic.com/static/img/flags/24/gb/b2f01d4fd94cb1420fcdbbef62c06ade1026fbbd.png" alt=""></p></div>
+        </div>
+
+        <div id="collage2">
+            <div id="collage2_img1"><p class="collage_heading">Reading <img src="https://cf.bstatic.com/static/img/flags/24/gb/b2f01d4fd94cb1420fcdbbef62c06ade1026fbbd.png" alt=""></p></div>
+            <div id="collage2_img2"><p class="collage_heading">NewCastle Upon Tyne <img src="https://cf.bstatic.com/static/img/flags/24/gb/b2f01d4fd94cb1420fcdbbef62c06ade1026fbbd.png" alt=""></p></div>
+            <div id="collage2_img3"><p class="collage_heading">Brimingham <img src="https://cf.bstatic.com/static/img/flags/24/gb/b2f01d4fd94cb1420fcdbbef62c06ade1026fbbd.png" alt=""></p></div>
+        </div>
+
+
+
+        <!-- Browse by property type -->
+
+        <h1 class="headtag">Browse by property type</h1>
+
+        <div id="browse_carousel">
+           <div id="browse_container">
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450090.jpeg?k=52f6b8190edb5a9c91528f8e0f875752ce55a6beb35dc62873601e57944990e4&o="><p class="browse_heading">Glamping</p><p class="browse_desc">14,043 Glamping sites</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/hotel/300x240/52979454.jpeg?k=6ac6d0afd28e4ce00a8f817cc3045039e064469a3f9a88059706c0b45adf2e7d&o="><p class="browse_heading">Cabins</p><p class="browse_desc">37,042 Cabins</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450097.jpeg?k=eac0f917a53dc395bd379fef8c191e7d5e37012b68e60232e4f6bba2a2901b7a&o="><p class="browse_heading">Luxury Tents</p><p class="browse_desc">4,528 Luxury Tents</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450095.jpeg?k=cd5e46e632dab722d22217813485efde31fbe82f5f26a624166edccdbe8187bc&o="><p class="browse_heading">Boats</p><p class="browse_desc">1,702 Boats</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450283.jpeg?k=44ef0e355cff36883935e4c99b5c01b035eabebad278d22363210b2fe40b2791&o="><p class="browse_heading">Camp sites</p><p class="browse_desc">8,043 Campsites</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450093.jpeg?k=aa5cc7703f3866af8ffd6de346c21161804a26c3d0a508d3999c11c337506ae1&o="><p class="browse_heading">Motels</p><p class="browse_desc">13,156 Motels</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450080.jpeg?k=15d9709efa513f2b23b5fa8d5234d87bdee2bf97b3e7552244592da11413db9a&o="><p class="browse_heading">Farm Stays</p><p class="browse_desc">9,881 Farm Stays</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450068.jpeg?k=41cc7c5449011323aaaaed4e845cb16200b5d540c77a50c1bea90399a1e92d70&o="><p class="browse_heading">Holiday Parks</p><p class="browse_desc">5,187 Holidays Parks</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450103.jpeg?k=a1fa72362160b1df6e288050afa7ce1aade80871acd368ddd4a4ebf6ad87764e&o="><p class="browse_heading">Country Houses</p><p class="browse_desc">11,157 Country Houses</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450064.jpeg?k=4d4ea22dc4828fd55a3889e90531c9841ddb2d9abf460c420cdd24f2a9b658d2&o="><p class="browse_heading">Riads</p><p class="browse_desc">1,290 Riads</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450279.jpeg?k=cb9ab85ffe439f3030e00281f2d52583a398bf076e54f00f746e1d1baf62bf6e&o="><p class="browse_heading">Ryokans</p><p class="browse_desc">2,035 Ryokans</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/57175023.jpeg?k=dc0319d4d64ded9ee4b0ddb162a2e80db7899300b7bf21b34506888895d74c79&o="><p class="browse_heading">Tiny Houses</p><p class="browse_desc">733 Tiny Houses</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/hotel/300x240/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o="><p class="browse_heading">Villas</p><p class="browse_desc">473,888 Villas</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450113.jpeg?k=76b3780a0e4aacb9d02ac3569b05b3c5e85e0fd875287e9ac334e3b569f320c7&o="><p class="browse_heading">Holiday Homes</p><p class="browse_desc">473,388 Holiday Homes</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450074.jpeg?k=7039b03a94f3b99262c4b3054b0edcbbb91e9dade85b6efc880d45288a06c126&o="><p class="browse_heading">Cottages</p><p class="browse_desc">518,101 Cottages</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450058.jpeg?k=2449eb55e8269a66952858c80fd7bdec987f9514cd79d58685651b7d6e9cdfcf&o="><p class="browse_heading">Serviced Apartments</p><p class="browse_desc">33,314 Serviced Apartments</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450075.jpeg?k=d23cf8443780ac09f46f59e40393d75dbe64b06029b4959c60b81b7fdefc9be0&o="><p class="browse_heading">Self Catering Accomodations</p><p class="browse_desc">772,902 Self Catering Accomodations</p></div>
+              <div class="browse_img_card"><img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450073.jpeg?k=795a94c30433de1858ea52375e8190a962b302376be2e68aa08be345d936557d&o="><p class="browse_heading">Guest Houses</p><p class="browse_desc">98,848 Guest Houses</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/hotel/300x240/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o="><p class="browse_heading">Apartments</p><p class="browse_desc">880,032 Apartments</p></div>
+              <div class="browse_img_card"><img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450082.jpeg?k=beb101b827a729065964523184f4db6cac42900c2415d71d516999af40beb7aa&o="><p class="browse_heading">Hostels</p><p class="browse_desc">16,717 Hostels</p></div>
+              <div class="browse_img_card"><img src=""></div>
+              <div class="browse_img_card"><img src=""></div>
+              <div class="browse_img_card"><img src=""></div>
+              <div class="browse_img_card"><img src=""></div>
+           </div>
+            <i class="fa-solid fa-angle-left" id="ltbrarrow"></i>
+            <i class="fa-solid fa-angle-right" id="rtbrarrow"></i>
+        </div>
+
+
     </div>
 </body>
 </html>
+
+<script src="./srcipt/index.js"></script>
+
