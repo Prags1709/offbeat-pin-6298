@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar_container{
+    border: 1px solid red;
+    width: 100%;
+    height: 100px;
+    display: flex;
+   justify-content:center;
+   align-items: center;
+   background-color:#003580;
+}
+
+#navbar{
+ border: 0px solid red;
+ width: 90%;
+ height: 100px;
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+ background-color:#003580;
+}
+
+#navbar div{
+    border:0px solid black;
+}
+#nav_left{
+    width: 100px;
+    height: 90px; 
+}
+#nav_left:hover{
+    cursor: pointer;
+}
+#logo_img{
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#nav_right{
+    width:600px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav_right div{
+   border: 0px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.nav_icon{
+    width:40px;
+    height:40px;
+}
+.nav_icon img{
+    width:70%;
+}
+.nav_icon:hover{
+    cursor: pointer;
+    background-color: #b4c9e0;
+}
+.login_sign_btn{
+    width:100px;
+    height:40px;
+    font-style: normal;
+    font-size: 16px;
+    font-family: sans-serif,Arial, Helvetica;
+    font-weight: 500;
+    color: #006ce4;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+#login_sign_btn1{
+    width:150px;
+    border: 1px solid white;
+    background-color: #003580;
+    color: white;
+}
+#login_sign_btn1:hover{
+    background-color:rgb(79, 128, 148); 
+}
+.login_sign_btn:hover{
+    cursor: pointer;
+    background-color:skyblue; 
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0px dotted black;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(56, 50, 50);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+  /* navabr options */
+
+#navmenu{
+    border:0px solid yellow;
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#003580;
+}
+
+#navmenu_icon_container{
+    border:0px solid red;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color:#003580;
+}
+#navmenu_icon_container div{
+    border:1px solid white;
+    width:130px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#title{
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+}
+.material-symbols-outlined{
+    margin-left: 10px;
+    color: white;
+    
+}
+#navmenu_icon_container div:hover{
+    cursor: pointer;
+    background-color: rgb(22, 130, 173);
+}
+
+

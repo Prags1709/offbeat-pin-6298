@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+         #nav{
+             display:flex;
+             background:skyblue;
+             margin:auto;
+            
+         }
+         #logopharm{
+           height:70px;
+         }
+         #nav>div{
+             
+             color:white;
+             margin:auto;
+             font-size:22px;
+         }
+         #imgcont{
+             margin:auto;
+         }
+         #nav>div:hover{
+             text-decoration: underline;
+         }
+          body{
+              text-align:center;
+          }
+          
+          body{
+              background-image: url();
+              background-size: 100%;
+          }
+          #container{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width:25%;
+            height:400px;
+            margin-left:10%;
+            margin-top:5%;
+            background:white;
+            color:rgb(16,132,126);
+            border-radius: 15px;
+          }
+          form>p{
+              color:black;
+              font-weight:bold;
+              
+          }
+          form{
+            text-align:left;
+            margin-left:10px;
+          }
+          #email,#pass{
+              height:30px;
+              width:90%;
+          }
+          input:nth-child(6){
+              margin-top:20px;
+              background:#4915bb;
+              border:0px;
+              width:70%;
+              margin-left:10%;
+              padding:10px;
+              border-radius:10px;
+          }
+          input:nth-child(6):hover{
+              background:grey;
+          }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <img id="logopharm" src="./Beige and Green Vintage Modern Badge Hotels and Travel Logo.jpg">
+        </div>
+        
+        <div id="sup" onclick="window.location.href='signup.html'">Login/SignUp</div>
+            <img src="">
+        </div>
+     </div>
+    <div id="container">
+        <h1>Log-In</h1>
+        <form>
+            <p>Username</p>
+            <input id="email" type="text" placeholder="Enter user name"/>
+            <p>password</p>
+            <input id="pass" type="password" placeholder="enter password"/>
+            <br>
+            <input type="submit"value="login"/>         
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", signin);
+
+var regdUsers = JSON.parse(localStorage.getItem("userDataBase"));
+
+function signin(event) {
+  event.preventDefault();
+  var pass = document.querySelector("#pass").value;
+  var user = document.querySelector("#email").value;
+
+  for (var i = 0; i < regdUsers.length; i++) {
+    console.log(regdUsers[i].userName, regdUsers[i].passwd);
+    if (regdUsers[i].userName == user && regdUsers[i].passwd == pass) {
+      window.location.href = "home.html";
+    }
+  }
+}
+</script>

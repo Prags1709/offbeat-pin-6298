@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+         #nav{
+             display:flex;
+             background:skyblue;
+             margin:auto;
+             justify-content: space-between;
+            
+         }
+         #logopharm{
+           height:100px;
+         }
+         #nav>div{
+             
+             color:white;
+             margin:auto;
+             font-size:22px;
+         }
+         #imgcont{
+             margin:auto;
+         }
+         #nav>div:hover{
+             text-decoration: underline;
+         }
+         body{
+             background-image: url(https://q-xx.bstatic.com/psb/capla/static/media/long_stays_banner_wide.a1b12d47.png);
+         }
+        #container{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width:300px;
+            text-align:center;
+            margin-left:40%;
+            background:white;
+            color:black;
+            border-radius:15px;
+          }
+          form>input{
+              width:80%;
+              border:0.5px solid black;
+              height:25px;
+              border-radius:5px;
+
+          }
+          form>h3{
+              text-align:left;
+              margin-left:28px;
+          }
+          
+          input:nth-child(10){
+                margin-top:20px;
+              background:#331ab0;
+              border:0px;
+              width:80%;
+              color:white;
+              margin-bottom:20px;
+              padding:10px;
+              border-radius:10px;
+
+                
+          }
+          input:nth-child(10):hover{
+              background:grey;
+          }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <img id="logopharm" src="./Beige and Green Vintage Modern Badge Hotels and Travel Logo.jpg">
+        </div>
+        <div id="sup" onclick="window.location.href='signup.html'">Login/SignUp</div>
+            <img src="">
+            
+        </div>
+        </div>
+    <div id="container">
+        <h1>Sign up</h1>
+        <form>
+            <h3>Email</h3>
+            <input id="email"type="text" placeholder="Ener email">
+            <h3>Password</h3>
+            <input id="pass" type="password" placeholder="Enter password">
+            <h3>User Name</h3>
+            <input id="user" type="text" placeholder="Enter Username">
+            <h3> Mobile No</h3>
+            <input id="mobile" type="number" placeholder="Enter mobile number">
+            <br>
+            <input  type="submit" value="Sign Up">
+        </form>
+        </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",subfun);
+    var userStack=JSON.parse(localStorage.getItem("userDataBase")) || [];
+    function subfun(eve){
+        eve.preventDefault();
+        var email=document.querySelector("#email").value;
+        var pass=document.querySelector("#pass").value;
+        var user=document.querySelector("#user").value;
+        var mobile=document.querySelector("#mobile").value;
+        var userData={
+            emailAdd:email,
+            passwd:pass,
+            userName:user,
+            mblNum:mobile,
+        };
+        userStack.push(userData);
+        localStorage.setItem("userDataBase",JSON.stringify(userStack));
+        alert("signup success");
+        window.location.href="login.html";
+    }
+</script>
