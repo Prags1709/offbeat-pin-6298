@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
@@ -92,6 +93,95 @@
 </div>
 </div>
 </div>
- 
+
+<!-- filter & dynamic data section -->
+
+<div id="flights-booking-container">
+<div id="filter-container">
+<div id="filter_head">    
+ <h6>Filters</h6>
+ <!-- <p>showing 650 results</p> -->
+</div>
+
+<form class="radio-btn-filter">
+    <h6>Stops</h6>
+    <input type="radio" class="filter-btn" name="check" value="any"/><span>Any</span><br>
+    <input type="radio" class="filter-btn" name="check" value="One-way"><span>Direct only</span><br>
+    <input type="radio" class="filter-btn" name="check" value="Multi-city"><span>1 stop max</span>
+</form>  
+
+<form id="airlines-filter">
+    <h6>Airlines</h6>
+    <input type="radio" class="airlines-filter-btn" name="check" value="air-asia-india"/><span>Air Asia India</span><br>
+    <input type="radio" class="airlines-filter-btn" name="check" value="air-india"><span>Air India</span><br>
+    <input type="radio" class="airlines-filter-btn" name="check" value="indigo"><span>IndiGo</span><br>
+    <input type="radio" class="airlines-filter-btn" name="check" value="vistara"><span>Vistara</span>
+</form>
+
+</div>
+<div id="airlines-data">
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-airlines-tab" role="tablist">
+          <button class="nav-link active" id="best-tab" data-bs-toggle="tab" data-bs-target="#best-home" type="button" role="tab" aria-controls="best-home" aria-selected="true">Best</button>
+          <button class="nav-link" id="cheapest-tab" data-bs-toggle="tab" data-bs-target="#cheapest-profile" type="button" role="tab" aria-controls="cheapest-profile" aria-selected="false">Cheapest</button>
+          <button class="nav-link" id="fastest-tab" data-bs-toggle="tab" data-bs-target="#fastest-contact" type="button" role="tab" aria-controls="fastest-contact" aria-selected="false">Fastest</button>
+        
+        </div>
+      </nav>
+
+    <div class="tab-content" id="nav-tabContent_timings">
+        <div class="tab-pane fade show active" id="best-home" role="tabpanel" aria-labelledby="best-home-tab">
+         
+         <div id="flight-timing">
+            <div id="img_flight-timing">
+                <img width="70%" src="https://airhex.com/images/airline-logos/indigo.png" alt="indigo">
+                <p>IndiGo</p>
+            </div>
+            <div id="details_flight-timing">
+                 <div>
+                    <h6>10:20 PM</h6>
+                    <p>BBI</p>
+                 </div>
+                 <div>
+                    <p>2h 10m</p>
+                    <hr>
+                    <p>1 stop</p>
+                 </div>
+                 <div>
+                    <h6>12:30 AM</h6>
+                    <p>DL</p>
+                 </div>
+            </div>
+         </div>
+         <div id="total-price">
+            <span class="material-symbols-outlined">
+                luggage
+                </span>
+                <span class="material-symbols-outlined">
+                    backpack
+                    </span>
+            <p>Included: carry-on bag, checked bag</p>
+            <h4>INR 5,999</h4>
+            <p>Total price for all travelers</p>
+            <button>See flight</button>
+         </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="cheapest-profile" role="tabpanel" aria-labelledby="cheapest-profile-tab">
+         <p>Main tera boyfriend</p>
+        </div>
+
+        <div class="tab-pane fade" id="fastest-contact" role="tabpanel" aria-labelledby="fastest-contact-tab">
+          <p>lets get married</p>
+        </div>
+
+    </div>
+
+</div>
+</div>
 </body>
 </html>
+
+<script src="flights.voyage.js"></script>
