@@ -87,7 +87,9 @@ body{
     cursor: pointer;
     background-color:skyblue; 
 }
-
+#logout_bttn{
+    display: none;
+}
 
 .tooltip {
     position: relative;
@@ -97,7 +99,7 @@ body{
   
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 170px;
     background-color: rgb(56, 50, 50);
     color: #fff;
     text-align: center;
@@ -156,11 +158,11 @@ body{
     margin-left: 10px;
     color: white;
 }
-/* .material-symbols-outlined{
+.navmenu_icon{
     margin-left: 10px;
-    color: white; */
+    color: white; 
     
-/* } */
+ }
 #navmenu_icon_container div:hover{
     cursor: pointer;
     background-color: rgb(22, 130, 173);

@@ -25,19 +25,20 @@
                     <div class="nav_icon tooltip"><img src="./images/india.png" alt=""><span class="tooltiptext">Select Your Language</span></div>
                     <div class="nav_icon tooltip"><img src="./images/customer-support.png" alt=""><span class="tooltiptext">Help and Support</span></div>
                     <button class="login_sign_btn" id="login_sign_btn1">List your Property</button>
-                    <button class="login_sign_btn">Register</button>
-                    <button class="login_sign_btn">Sign In</button>
+                    <button id="Reg_bttn" class="login_sign_btn">Register</button>
+                    <button id="Sign_bttn" class="login_sign_btn">Sign In</button>
+                    <button id="logout_bttn" class="login_sign_btn">Logout</button>
                 </div>
             </div>
         </div>
         <div id="navmenu">
            <div id="navmenu_icon_container">
-            <div><span class="material-symbols-outlined">bed</span> <span id="title"> Stay</span> </div>
-            <div><span class="material-symbols-outlined">flight_takeoff</span> <span id="title"> Flights</span></div>
-            <div><span class="material-symbols-outlined">hotel</span><span id="title"> Hotels</span></div>
-            <div><span class="material-symbols-outlined">car_rental</span><span id="title">Car Rental</span></div>
-            <div><span class="material-symbols-outlined">attractions</span><span id="title">Attractions</span></div>
-            <div><span class="material-symbols-outlined">local_taxi</span><span id="title">Taxi</span></div>
+            <div><span class="material-symbols-outlined navmenu_icon">bed</span> <span id="title"> Stay</span> </div>
+            <div id="letsFly"><span class="material-symbols-outlined navmenu_icon">flight_takeoff</span> <span id="title"> Flights</span></div>
+            <div><span class="material-symbols-outlined navmenu_icon">hotel</span><span id="title"> Hotels</span></div>
+            <div><span class="material-symbols-outlined navmenu_icon">car_rental</span><span id="title">Car Rental</span></div>
+            <div><span class="material-symbols-outlined navmenu_icon">attractions</span><span id="title">Attractions</span></div>
+            <div><span class="material-symbols-outlined navmenu_icon">local_taxi</span><span id="title">Taxi</span></div>
            </div>
         </div>
 
@@ -112,6 +113,8 @@
        
         <div id="explore_carousel">
            <div id="explore_container">
+              <div class="explore_carousel_img_container"><img src="https://q-xx.bstatic.com/xdata/images/region/250x250/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o="><p class="explore_heading">Goa</p><p class="explore_desc">5,247 Properties</p></div>
+              <div class="explore_carousel_img_container"><img src="https://q-xx.bstatic.com/xdata/images/city/250x250/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o="><p class="explore_heading">New Delhi</p><p class="explore_desc">2,911 Properties</p></div>
               <div class="explore_carousel_img_container"><img src="https://r-xx.bstatic.com/xdata/images/city/250x250/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o="><p class="explore_heading">Mumbai</p><p class="explore_desc">1,650 Properties</p></div>
               <div class="explore_carousel_img_container"><img src="https://r-xx.bstatic.com/xdata/images/city/250x250/684657.jpg?k=66dc5035b43e9bb86b756e381e4fec2558064af4a63a8af17836725a854c03ee&o="><p class="explore_heading">Jaipur</p><p class="explore_desc">1,558 Properties</p></div>
               <div class="explore_carousel_img_container"><img src="https://q-xx.bstatic.com/xdata/images/city/250x250/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o="><p class="explore_heading">Banglore</p><p class="explore_desc">2,040 Properties</p></div>
@@ -322,14 +325,274 @@
 
         <!-- Destinations we love -->
         <h1 class="headtag">Destinations we love</h1>
+
+        <div id="destination_categories">
+            <div id="des_cate1" class="des_cate">Regions</div>
+            <div id="des_cate2" class="des_cate">Cities</div>
+            <div id="des_cate3" class="des_cate">Places of Interest</div>
+        </div>
+
+        <div id="destinations">
+            <div id="destinations_categorie1">
+                <div class="des_cat">
+                   <p class="des_head">Uttar Pradesh</p>
+                   <p class="dest_desc">4,382 Properties</p>
+                   <p class="des_head">Hawaii</p>
+                   <p class="dest_desc">5,531 Properties</p>
+                   <p class="des_head">Bihar</p>
+                   <p class="dest_desc">762 Properties</p>
+                   <p class="des_head">Bali</p>
+                   <p class="dest_desc">12,683 Properties</p>
+                   
+                </div>
+                <div class="des_cat">
+                   <p class="des_head">Guernsey</p>
+                   <p class="dest_desc">61 Properties</p>
+                   <p class="des_head">Isle Of wight</p>
+                   <p class="dest_desc">934 Properties</p>
+                   <p class="des_head">Jersey</p>
+                   <p class="dest_desc">89 Properties</p>
+                   <p class="des_head">Zanzibar</p>
+                   <p class="dest_desc">835 Properties</p>
+                </div>
+                <div class="des_cat">
+                    <p class="des_head">England</p>
+                   <p class="dest_desc">74,057 Properties</p>
+                   <p class="des_head">Ibiza</p>
+                   <p class="dest_desc">1,651 Properties</p>
+                   <p class="des_head">Ras Al Khaimah</p>
+                   <p class="dest_desc">114 Properties</p>
+                   <p class="des_head">Mykonos</p>
+                   <p class="dest_desc">1,452 Properties</p>
+                </div>
+                <div class="des_cat">
+                   <p class="des_head">Texel</p>
+                   <p class="dest_desc">411 Properties</p>
+                   <p class="des_head">Tenerife</p>
+                   <p class="dest_desc">9,626 Properties</p>
+                   <p class="des_head">Cornwall</p>
+                   <p class="dest_desc">5,726 Properties</p>
+                   <p class="des_head">Phuket province</p>
+                   <p class="dest_desc">5,501 Properties</p>
+                </div>
+                <div class="des_cat">
+                    <p class="des_head">Lake District</p>
+                   <p class="dest_desc">24,026 Properties</p>
+                   <p class="des_head">Santorini</p>
+                   <p class="dest_desc">1,762 Properties</p>
+                   <p class="des_head">Bora Bora</p>
+                   <p class="dest_desc">59 Properties</p>
+                </div>
+            </div>
+
+
+            <div id="destinations_categorie2">
+                <div class="des_cat">
+                    <p class="des_head">Milton Keynes, United Kingdom</p>
+                    <p class="dest_desc">206 holiday rentals, 155 apartments, 64 cottages, 64 cottages, 63 villas</p>
+                    <p class="des_head">Sheffield, United Kingdom</p>
+                    <p class="dest_desc">195 holiday rentals, 143 apartments, 67 cottages, 67 cottages, 66 villas</p>
+                    <p class="des_head">Nottingham, United Kingdom</p>
+                    <p class="dest_desc">293 holiday rentals, 238 apartments, 108 cottages, 108 cottages, 104 villas</p>  
+                </div>
+
+                <div class="des_cat">
+                    <p class="des_head">Bristol, United Kingdom</p>
+                    <p class="dest_desc">412 holiday rentals, 315 apartments, 114 cottages, 114 cottages, 106 holiday homes</p>
+                    <p class="des_head">Heathrow, United Kingdom</p>
+                    <p class="dest_desc">195 holiday rentals, 143 apartments, 67 cottages, 67 cottages, 66 villas</p>
+                    <p class="des_head">Belfast, United Kingdom</p>
+                    <p class="dest_desc">265 holiday rentals, 195 apartments, 83 cottages, 83 cottages, 82 holiday homes</p>  
+                </div>
+
+                <div class="des_cat">
+                    <p class="des_head">Bangkok</p>
+                    <p class="dest_desc">4039 hotels</p>
+                    <p class="des_head">York</p>
+                    <p class="dest_desc">828 hotels</p>
+                    <p class="des_head">London</p>
+                    <p class="dest_desc">14508 hotels</p>
+                    <p class="des_head">Liverpool</p>
+                    <p class="dest_desc">1080 hotels</p>  
+                </div>
+
+                <div class="des_cat">
+                    <p class="des_head">Glasgow</p>
+                    <p class="dest_desc">139 hotels</p>
+                    <p class="des_head">Edinburgh</p>
+                    <p class="dest_desc">3828 hotels</p>
+                    <p class="des_head">Carbis Bay</p>
+                    <p class="dest_desc">68 hotels</p>
+                    <p class="des_head">Brighton & Hove</p>
+                    <p class="dest_desc">845 hotels</p>  
+                </div>
+            </div>
+            <div id="destinations_categorie3">
+                <div class="des_cat">
+                    <p class="des_head">Al Maha Wildlife</p>
+                    <p class="dest_desc">1 property</p>
+                    <p class="des_head">Burj Al Arab</p>
+                    <p class="dest_desc">5,531 Properties</p>
+                    <p class="des_head">Wembley Stadium</p>
+                    <p class="dest_desc">15,762 Properties</p>
+                    <p class="des_head">The Shard</p>
+                    <p class="dest_desc">14,683 Properties</p>
+                    
+                 </div>
+                 <div class="des_cat">
+                    <p class="des_head">Ocean City Board</p>
+                    <p class="dest_desc">766 Properties</p>
+                    <p class="des_head">State Park</p>
+                    <p class="dest_desc">21 Properties</p>
+                    <p class="des_head">Kalahari WaterPark</p>
+                    <p class="dest_desc">43 Properties</p>
+                    <p class="des_head">Universal Studios</p>
+                    <p class="dest_desc">3,684 Properties</p>
+                 </div>
+                 <div class="des_cat">
+                     <p class="des_head">O2 Arena</p>
+                    <p class="dest_desc">14,057 Properties</p>
+                    <p class="des_head">River Walk</p>
+                    <p class="dest_desc">651 Properties</p>
+                    <p class="des_head">Heathrow Terminal 3</p>
+                    <p class="dest_desc">1,124 Properties</p>
+                    <p class="des_head">Effifle Tower</p>
+                    <p class="dest_desc">7,566 Properties</p>
+                 </div>
+                 <div class="des_cat">
+                    <p class="des_head">Portmeirion</p>
+                    <p class="dest_desc">9 Properties</p>
+                    <p class="des_head">Heathrow Terminal</p>
+                    <p class="dest_desc">63 Properties</p>
+                    <p class="des_head">Times Square</p>
+                    <p class="dest_desc">1,363 Properties</p>
+                    <p class="des_head">Disneyland</p>
+                    <p class="dest_desc">247 Properties</p>
+                 </div>
+                 <div class="des_cat">
+                     <p class="des_head">Guadalupe River </p>
+                    <p class="dest_desc">327 Properties</p>
+                    <p class="des_head">Niagara Falls Sation</p>
+                    <p class="dest_desc">75 Properties</p>
+                    <p class="des_head">Comal River Tubing</p>
+                    <p class="dest_desc">7,559 Properties</p>
+                    <p class="des_head">Disneyland Paris</p>
+                    <p class="dest_desc">7,556 Properties</p>
+                 </div>
+            </div>
+
+        </div>
+
+
+        <!-- Lower Search Bar -->
+        <div id="lower_seachbar_container">
+            <p id="subs_head">Save time, save money!<p>
+            <p id="subs_desc">Sign up and we'll send the best deals to you</p>
+            <div>
+                <input id="subs_mail" type="text" placeholder="Your Email Address">
+                <button id="subs_btn">Subscribe</button>
+            </div>
+            
+        </div>
+
          
+        <!-- List Your Property -->
+        <div id="lyp">
+           <button id="lyp_btn">List Your Property</button>
+           <hr id="lyp_line">
+           <div id="lyp_msc">
+            <p>Mobile Version</p>
+            <p>Manage Your Bookings</p>
+            <p class="tooltip">Customer Service Help <span id="texttoshow" class="tooltiptext">Your Reference ID is "AEG7L04R"</span></p>
+            <p class="tooltip">Bacome an affliate <span id="texttoshow" class="tooltiptext">Become An Affliate</span></p>
+            <p>Voyage.com for Business</p>
+           </div>    
+        </div>
+
+        <!-- Footer -->
+
+        <div id="Footer_part1">
+           <div class="footer_list_container">
+            <ul>
+                <li>Countries</li>
+                <li>Regions</li>
+                <li>Cities</li>
+                <li>Districts</li>
+                <li>Airports</li>
+                <li>Hotels</li>
+                <li>Places Of Interest</li>
+            </ul>
+           </div>
+           <div class="footer_list_container">
+            <ul>
+                <li>Homes</li>
+                <li>Apartments</li>
+                <li>Resorts</li>
+                <li>villas</li>
+                <li>Hostels</li>
+                <li>B&B's</li>
+                <li>Guest House</li>
+            </ul>
+           </div>
+           <div class="footer_list_container">
+            <ul>
+                <li>Unique Places to Stay</li>
+                <li>All Destinations</li>
+                <li>Discover</li>
+                <li>Reviews</li>
+                <li>Unpacked:Travel articles</li>
+                <li>Travel Communities</li>
+                <li>Seaonal and holiday deals</li>
+            </ul>
+           </div>
+           <div class="footer_list_container">
+            <ul>
+                <li>Car hire</li>
+                <li>Flight finder</li>
+                <li>restaurant reservations</li>
+                <li>Booking.com for Travel Agents</li>
+            </ul>
+           </div>
+           <div class="footer_list_container">
+            <ul>
+                <li>Coronavirus (COVID-19) FAQS</li>
+                <li>About Booking.com</li>
+                <li>Customer Service Help</li>
+                <li>Partner Help</li>
+                <li>Careers</li>
+                <li>Sustainability</li>
+                <li>Press Center</li>
+                <li>Safety Resource Center</li>
+                <li>Investor Relations</li>
+                <li>Terms & Conditions</li>
+                <li>Partner Dispute</li>
+                <li>How we work</li>
+                <li>Privacy & Cookie Statement</li>
+                <li>MSA Statement </li>
+                <li>Corporate Contact</li>
+            </ul>
+           </div>
+        </div>
+
+        <div id="Footer_part2"><p>Extranet Login</p></div>
+        <div id="Footer_part3"><p>Copyright © 1996-2022 Booking.com™. All rights reserved.</p></div>
+        <div id="Footer_part4"><p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p></div>
         
+        <div id="Footer_part_5">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="">
+            <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="">
+        </div>
 
     </div>
 </body>
 </html>
 
 <script src="./srcipt/index.js"></script>
+<script src="./srcipt/logged.js"></script>
 
 
 
