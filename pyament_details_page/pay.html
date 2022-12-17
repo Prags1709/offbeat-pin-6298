@@ -63,9 +63,11 @@
                 <h1 id="destination_name">Kolkata <span><i class="fa-solid fa-right-left"></i></span> Bangkok</h1>
             </div>
         </div>
+<!-- --------------------------------------------------nav bar end------------------------- -->
 
+<!-- -------------------------------------------ticket selection--------------------------- -->
         <!-- <h2 class="margin_side">Select your ticket type</h2> -->
-        <div class="render_data hello">
+        <div class="hello render_data ">
             <div class="margin_side margin_top">
                 <h2 style="margin-bottom: 15px;">Select your ticket type</h2>
                 <div class="display_flex">
@@ -90,7 +92,7 @@
                                 <hr>
                                 <div class="total_amt padding">
                                     <p>Total Price</p>
-                                    <p class="amount_color">INR<span>10000</span></p>
+                                    <p class="amount_color">INR<span id="standard_total_amount">10000</span></p>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +120,7 @@
                                 <hr>
                                 <div class="total_amt padding">
                                     <p>Total Price</p>
-                                    <p class="amount_color">INR<span>11000</span></p>
+                                    <p class="amount_color">INR<span id="flexibele_total_amount">11000</span></p>
                                 </div>
                             </div>
                             <div id="terms_condition">
@@ -128,20 +130,20 @@
                     </div>
                     <div class="render_amount_side">
                         <div class="total_amt">
-                            <h4>Ticket (<span id="adult_count">2</span> adult <!-- child count -->)</h6>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <h4>Ticket (<span class="adult_count">2</span> adult <!-- child count -->)</h6>
+                            <p class="amount_color">INR<span class="total_amount">11000</span></p>
                         </div>
                         <div class="total_amt">
-                            <p>Flight fare</p>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <p >Flight fare</p>
+                            <p class="amount_color">INR<span class="flight_fare">11000</span></p>
                         </div>
                         <div class="total_amt">
-                            <p>Flight fare</p>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <p>Taxes and fees</p>
+                            <p class="amount_color">INR<span class="tax_fees">11000</span></p>
                         </div>   
                         <div class="total_amt" style="margin-top: 20px;">
                             <h2>Total</h2>
-                            <h2 class="amount_color">INR<span>11000</span></h2>
+                            <h2 class="amount_color">INR<span class="final_total_amt">000</span></h2>
                         </div>
                         <p>Includes taxes and charges</p>
                         <p id="price_break_view" style="margin-top: 15px;">View price breakdown</p>
@@ -154,13 +156,14 @@
                 </div>
             </div>
         </div>
+        <!-- ---------------------------------ticket selection end--------------------- -->
         <!-- ---------------who is flying------------- -->
         <div class="no_visible_data hello">
             <div class="margin_side margin_top">
                 <h2 style="margin-bottom: 15px;">Who's flying?</h2>
                 <div class="display_flex">
                     <div class="contact-details">
-                        <div class="contact-info boxborder border_space"">
+                        <div class="contact-info boxborder border_space">
                             <div>
                                 <h3>Contact details</h3>
                                 <p>Required</p>
@@ -242,20 +245,20 @@
     <!--------------- --------------render amount------------------------ -->
                     <div class="render_amount_side">
                         <div class="total_amt">
-                            <h4>Ticket (<span id="adult_count">2</span> adult <!-- child count -->)</h6>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <h4>Ticket (<span class="adult_count">2</span> adult <!-- child count -->)</h6>
+                            <p class="amount_color">INR<span class="total_amount">11000</span></p>
                         </div>
                         <div class="total_amt">
-                            <p>Flight fare</p>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <p >Flight fare</p>
+                            <p class="amount_color">INR<span class="flight_fare">11000</span></p>
                         </div>
                         <div class="total_amt">
-                            <p>Flight fare</p>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <p>Taxes and fees</p>
+                            <p class="amount_color">INR<span class="tax_fees">11000</span></p>
                         </div>   
                         <div class="total_amt" style="margin-top: 20px;">
                             <h2>Total</h2>
-                            <h2 class="amount_color">INR<span>11000</span></h2>
+                            <h2 class="amount_color">INR<span class="final_total_amt">000</span></h2>
                         </div>
                         <p>Includes taxes and charges</p>
                         <p id="price_break_view" style="margin-top: 15px;">View price breakdown</p>
@@ -268,34 +271,72 @@
                 </div>
             </div>
         </div>
-        <div class="render_data"> 
+        <!-- ------------------------------wh0's flying end-------------------- -->
+
+        <!-- -------------------------------- luggage start---------------------------- -->
+        <div class="no_visible_data luggages_data hello"> 
             <div class="margin_side margin_top">
                 <div class="display_flex">
                     <div>
-                        <h2>Luggage</h2>
-                        <h3>Included baggage</h3>
+                        <h3 class="gap_div lines">Luggage</h3>
+                        <h4 class="gap_2line">Included baggage</h4>
                         <p>Already included in the price</p>
-                        <div>
-                            
+                        <div class="luggage_included">
+                            <div class="flex_icons">
+                                <img class="icons_width" src="https://cdn-icons-png.flaticon.com/512/3313/3313637.png " alt="">
+                                <p>1 carry-on bag for per person</p>
+                            </div>
+                            <div>
+                                <p style="color: green;">Included</p>
+                            </div>
                         </div>
-                        <div></div>
+                        <h4 class="margin_top">Extra baggage</h4>
+                        <h5 class="gap_2line">Carry-on</h5>
+                        <div class="luggage_included">
+                            <div class="flex_icons">
+                                <img class="icons_width" src="https://cdn-icons-png.flaticon.com/512/3150/3150913.png" alt="">
+                                <p>No baggage can be added to this booking, but it may be possible later via the airline.</p>
+                            </div>
+                        </div>
+                        <h5 class="margin_top">Checked bags</h5>
+                        <p class="gap_2line"> <span>person name</span> (adult)</p>
+                        <div class="luggage_border">                            
+                            <div>
+                                <div>
+                                    <input name="luggage" type="radio"
+                                    value="no_bags" id="checked_bags" checked="">
+                                    <p>No checked bags</p>
+                                </div>
+                                <img src="https://cdn-icons-png.flaticon.com/512/3150/3150913.png " alt="">
+                            </div>
+                            <div>
+                                <div>
+                                    <input name="luggage" type="radio"
+                                    value="no_bags" id="no_checked_bags">
+                                    <p>1 checked bag
+                                        Max weight 20 kg
+                                        + INR4,425.60</p>
+                                </div>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1243/1243546.png" alt="">
+                            </div>
+                        </div>
                     </div>
                     <div class="render_amount_side">
                         <div class="total_amt">
-                            <h4>Ticket (<span id="adult_count">2</span> adult <!-- child count -->)</h6>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <h4>Ticket (<span class="adult_count">2</span> adult <!-- child count -->)</h6>
+                            <p class="amount_color">INR<span class="total_amount">11000</span></p>
                         </div>
                         <div class="total_amt">
-                            <p>Flight fare</p>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <p >Flight fare</p>
+                            <p class="amount_color">INR<span class="flight_fare">11000</span></p>
                         </div>
                         <div class="total_amt">
-                            <p>Flight fare</p>
-                            <p class="amount_color">INR<span>11000</span></p>
+                            <p>Taxes and fees</p>
+                            <p class="amount_color">INR<span class="tax_fees">11000</span></p>
                         </div>   
                         <div class="total_amt" style="margin-top: 20px;">
                             <h2>Total</h2>
-                            <h2 class="amount_color">INR<span>11000</span></h2>
+                            <h2 class="amount_color">INR<span class="final_total_amt">000</span></h2>
                         </div>
                         <p>Includes taxes and charges</p>
                         <p id="price_break_view" style="margin-top: 15px;">View price breakdown</p>
@@ -317,4 +358,5 @@
 
 </html>
 <script src="payment.js"></script>
-<!-- <i class="fa-regular fa-solid fa-suitcase-rolling"></i> -->
+
+

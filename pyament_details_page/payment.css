@@ -2,8 +2,8 @@
     margin:0;
     padding: 0;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1,h2,h3,h4,h5,h6,p{
+    font-family:'Libre Franklin', sans-serif;
 }
 p{
     color: #474747;
@@ -27,6 +27,9 @@ button{
 .no_visible_data{
     display: none;
 }
+.icons_width{
+    width: 3%;
+}
 /* ----------------------default------------------------- */
 /* ---------------------headers start----------------------------- */
 #bottom_Nav_Bar{
@@ -39,7 +42,7 @@ button{
     display: flex;
     align-items: center;
     padding: 2.5% 0px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Libre Franklin', sans-serif;
 }
 .line_border{
     position: relative;
@@ -149,7 +152,7 @@ button{
     margin: 20px 0px;
 }
 label{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Libre Franklin', sans-serif;
 }
 .amount_color{
     color: black;
@@ -237,7 +240,7 @@ label{
     padding: 10px;
     font-size: 1rem;
     color: #006ce4;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Libre Franklin', sans-serif;
     border-radius: 5px;
 }
 #next{
@@ -250,4 +253,48 @@ label{
 }
 #back:hover{
     background-color: rgb(231, 227, 227);
+}
+/* ----------------------------------------luggage part------------------------------ */
+.luggage_included{
+    width: 90%;
+    display: flex;
+}
+.flex_icons{
+    display: flex;
+}
+.flex_icons>img{
+    padding-right: 20px;
+}
+.gap_2line{
+    margin-top: 2%;
+}
+.luggages_data{
+    line-height: 1.5;
+}
+p{
+    font-size: 14px;
+}
+.luggage_border>div{
+    border: 1px solid grey;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.luggage_border>div>div{
+    display: flex;
+    padding: 10px 10px;
+    margin: 0.5rem 0rem;
+}
+.luggage_border>div>img{
+    width: 7%;
+    height: 50%;
+    padding: 0px 10px;
+}
+.luggage_border>div>div>p{
+    padding-left: 10px;
+    padding-right:2rem ;
 }
