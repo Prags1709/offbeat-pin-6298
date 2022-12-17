@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="productpage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
@@ -12,6 +13,35 @@
 <body>
     
    <div class="cont">
+
+    <div id="navbar_container">
+        <div id="navbar">
+            <div id="nav_left">
+                <img src="./images/Travel Logo.gif" id="logo_img" style="width:100px; height:90px" />
+            </div>
+            <div id="nav_right">
+                <div class="nav_icon tooltip"><img src="./images/get-money.png" alt=""><span class="tooltiptext">Choose Your Currency</span></div>
+                <div class="nav_icon tooltip"><img src="./images/india.png" alt=""><span class="tooltiptext">Select Your Language</span></div>
+                <div class="nav_icon tooltip"><img src="./images/customer-support.png" alt=""><span class="tooltiptext">Help and Support</span></div>
+                <button class="login_sign_btn" id="login_sign_btn1">List your Property</button>
+                <button class="login_sign_btn">Register</button>
+                <button class="login_sign_btn">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <div id="navmenu">
+       <div id="navmenu_icon_container">
+        <div><span class="material-symbols-outlined">bed</span> <span id="title"> Stay</span> </div>
+        <div><span class="material-symbols-outlined">flight_takeoff</span> <span id="title"> Flights</span></div>
+        <div><span class="material-symbols-outlined">hotel</span><span id="title"> Hotels</span></div>
+        <div><span class="material-symbols-outlined">car_rental</span><span id="title">Car Rental</span></div>
+        <div><span class="material-symbols-outlined">attractions</span><span id="title">Attractions</span></div>
+        <div><span class="material-symbols-outlined">local_taxi</span><span id="title">Taxi</span></div>
+       </div>
+    </div>
+
+
+    <!-- ------------product-page----------- -->
         <div class="main">
             <div class="filter">
                 <div class="sort">
@@ -42,7 +72,8 @@
                 <h4>Price</h4>
                 <input class="box" type="checkbox" value="4000"><span>Rs.0-Rs.4,000</span><br>
                 <input class="box" type="checkbox" value="8000"><span>Rs.4,000-Rs.8,000</span><br>
-                <input class="box" type="checkbox" value="8001"><span>Rs.8,000+</span><br>
+                <input class="box" type="checkbox" value="8001"><span>Rs.8,000-Rs.10,000</span><br>
+                <input class="box" type="checkbox" value="10000"><span>Rs.10,000+</span><br>
             </div>
             <div class="product">
                 <!-- <div class="product-box">
