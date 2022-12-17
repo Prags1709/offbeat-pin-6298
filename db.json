@@ -1,0 +1,16 @@
+{
+    "flight":[
+        {
+            "id":1,
+            "name":"IndiGo",
+            "price":20000,
+            "depature":"AMD",
+            "arrival":"BBI",
+            "depature_time":"09:15 am",
+            "arrival_time":"11:15 am",
+            "time":"2h",
+            "stop":2,
+            "img":"https://airhex.com/images/airline-logos/indigo.png"
+        }
+    ]
+}

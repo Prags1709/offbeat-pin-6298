@@ -3,7 +3,6 @@
 #container{
   background-color: rgb(245,245,245);
   padding: 20px 0px;
- 
 }
 h4{
   font-weight: 700;
@@ -20,12 +19,13 @@ h6{
 }
 
 #top-section{
-   width: 65%;
-   /* border: 1px solid red; */
-   margin: auto;
+  width: 70%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
    
   
-}
+
 
 #top-section>div>p{
   font-size: large;
@@ -33,4 +33,91 @@ h6{
 }
 form{
     margin-top: 30px;
+}
+/* filter & dynamic data section */
+
+#flights-booking-container{
+  border: 0px solid grey;
+  display: flex;
+  width: 65%;
+  margin: auto;
+}
+
+#filter-container{
+  border: 0px solid red;
+  width: 28%;
+}
+.radio-btn-filter{
+  border: 0px solid green;
+}
+#cheapest-tab{
+  margin-left: 232px;
+}
+#fastest-tab{
+  margin-left: 232px;
+}
+/* best,cheapest,fastest */
+
+
+#best-home{
+  border: 1px solid lightgrey;
+  height: 200px;
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 12px;
+
+}
+#flight-timing{
+  border-right: 1px solid lightgrey;
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+#total-price{
+  border: 0px solid yellow;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+}
+#details_flight-timing{
+  border: 0px solid black;
+  display: flex;
+  width: 85%;
+  height: 100px;
+  align-items: center;
+}
+#img_flight-timing{
+  width: 10%;
+  padding: 5px;
+}
+#img_flight-timing>p{
+  margin-top: 10px;
+}
+#details_flight-timing>div:nth-child(2){
+  width: 70%;
+  text-align: center;
+}
+#details_flight-timing>div:nth-child(3){
+  text-align: right;
+}
+#total-price>button{
+  border: 1px solid rgb(0,59,149);
+  width: 85%;
+  height: 40px;
+  border-radius: 7px;
+  margin-top: -10px;
+  background-color: white;
+  color:rgb(0,59,149) ;
+}
+#total-price>button:hover{
+  background-color:lightblue;
+}
+#total-price>p{
+  margin-top: -5px;
+  
+}
+#total-price>h4{
+  margin-top: -5px;
 }
