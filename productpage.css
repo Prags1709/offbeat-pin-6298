@@ -3,6 +3,7 @@
     width: 97%;
     margin: auto;
     display: flex;
+    margin-bottom: 25px;
     
 }
 .filter {
@@ -55,7 +56,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 .image {
     /* border: 1px solid red; */
@@ -117,7 +118,7 @@
 }
 .right> button {
     cursor: pointer;
-    background-color: blue;
+    background-color: #0071c2;
     color: white;
     font-size: 16px;
     border: 0px;

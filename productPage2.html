@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/homebody.css">
     <link rel="stylesheet" href="productpage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
@@ -14,32 +16,33 @@
     
    <div class="cont">
 
-    <div id="navbar_container">
-        <div id="navbar">
-            <div id="nav_left">
-                <img src="./images/Travel Logo.gif" id="logo_img" style="width:100px; height:90px" />
-            </div>
-            <div id="nav_right">
-                <div class="nav_icon tooltip"><img src="./images/get-money.png" alt=""><span class="tooltiptext">Choose Your Currency</span></div>
-                <div class="nav_icon tooltip"><img src="./images/india.png" alt=""><span class="tooltiptext">Select Your Language</span></div>
-                <div class="nav_icon tooltip"><img src="./images/customer-support.png" alt=""><span class="tooltiptext">Help and Support</span></div>
-                <button class="login_sign_btn" id="login_sign_btn1">List your Property</button>
-                <button class="login_sign_btn">Register</button>
-                <button class="login_sign_btn">Sign In</button>
+    <div id="main">
+        <div id="navbar_container">
+            <div id="navbar">
+                <div id="nav_left">
+                    <img src="./images/Travel Logo.gif" id="logo_img" style="width:100px; height:90px" />
+                </div>
+                <div id="nav_right">
+                    <div class="nav_icon tooltip"><img src="./images/get-money.png" alt=""><span class="tooltiptext">Choose Your Currency</span></div>
+                    <div class="nav_icon tooltip"><img src="./images/india.png" alt=""><span class="tooltiptext">Select Your Language</span></div>
+                    <div class="nav_icon tooltip"><img src="./images/customer-support.png" alt=""><span class="tooltiptext">Help and Support</span></div>
+                    <button class="login_sign_btn" id="login_sign_btn1">List your Property</button>
+                    <button id="Reg_bttn" class="login_sign_btn">Register</button>
+                    <button id="Sign_bttn" class="login_sign_btn">Sign In</button>
+                    <button id="logout_bttn" class="login_sign_btn">Logout</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="navmenu">
-       <div id="navmenu_icon_container">
-        <div><span class="material-symbols-outlined">bed</span> <span id="title"> Stay</span> </div>
-        <div><span class="material-symbols-outlined">flight_takeoff</span> <span id="title"> Flights</span></div>
-        <div><span class="material-symbols-outlined">hotel</span><span id="title"> Hotels</span></div>
-        <div><span class="material-symbols-outlined">car_rental</span><span id="title">Car Rental</span></div>
-        <div><span class="material-symbols-outlined">attractions</span><span id="title">Attractions</span></div>
-        <div><span class="material-symbols-outlined">local_taxi</span><span id="title">Taxi</span></div>
-       </div>
-    </div>
-
+        <div id="navmenu">
+            <div id="navmenu_icon_container">
+             <div><span style="color: white;" class="material-symbols-outlined navmenu_icon">bed</span> <span id="title"> Stay</span> </div>
+             <div id="letsFly"><span style="color: white;" class="material-symbols-outlined navmenu_icon">flight_takeoff</span> <span id="title"> Flights</span></div>
+             <div><span style="color: white;" class="material-symbols-outlined navmenu_icon">hotel</span><span id="title"> Hotels</span></div>
+             <div><span style="color: white;" class="material-symbols-outlined navmenu_icon">car_rental</span><span id="title">Car Rental</span></div>
+             <div><span style="color: white;" class="material-symbols-outlined navmenu_icon">attractions</span><span id="title">Attractions</span></div>
+             <div><span style="color: white;" class="material-symbols-outlined navmenu_icon">local_taxi</span><span id="title">Taxi</span></div>
+            </div>
+         </div>
 
     <!-- ------------product-page----------- -->
         <div class="main">
@@ -101,11 +104,111 @@
             </div>
         </div>
    </div>
-   <div></div>
+   
+   <!-- Lower Search Bar -->
+   <div id="lower_seachbar_container">
+    <p id="subs_head">Save time, save money!<p>
+    <p id="subs_desc">Sign up and we'll send the best deals to you</p>
+    <div>
+        <input id="subs_mail" type="text" placeholder="Your Email Address">
+        <button id="subs_btn">Subscribe</button>
+    </div>
+    
+</div>
 
+ 
+<!-- List Your Property -->
+<div id="lyp">
+   <button id="lyp_btn">List Your Property</button>
+   <hr id="lyp_line">
+   <div id="lyp_msc">
+    <p>Mobile Version</p>
+    <p>Manage Your Bookings</p>
+    <p class="tooltip">Customer Service Help <span id="texttoshow" class="tooltiptext">Your Reference ID is "AEG7L04R"</span></p>
+    <p class="tooltip">Bacome an affliate <span id="texttoshow" class="tooltiptext">Become An Affliate</span></p>
+    <p>Voyage.com for Business</p>
+   </div>    
+</div>
+
+<!-- Footer -->
+
+<div id="Footer_part1">
+   <div class="footer_list_container">
+    <ul>
+        <li>Countries</li>
+        <li>Regions</li>
+        <li>Cities</li>
+        <li>Districts</li>
+        <li>Airports</li>
+        <li>Hotels</li>
+        <li>Places Of Interest</li>
+    </ul>
+   </div>
+   <div class="footer_list_container">
+    <ul>
+        <li>Homes</li>
+        <li>Apartments</li>
+        <li>Resorts</li>
+        <li>villas</li>
+        <li>Hostels</li>
+        <li>B&B's</li>
+        <li>Guest House</li>
+    </ul>
+   </div>
+   <div class="footer_list_container">
+    <ul>
+        <li>Unique Places to Stay</li>
+        <li>All Destinations</li>
+        <li>Discover</li>
+        <li>Reviews</li>
+        <li>Unpacked:Travel articles</li>
+        <li>Travel Communities</li>
+        <li>Seaonal and holiday deals</li>
+    </ul>
+   </div>
+   <div class="footer_list_container">
+    <ul>
+        <li>Car hire</li>
+        <li>Flight finder</li>
+        <li>restaurant reservations</li>
+        <li>Booking.com for Travel Agents</li>
+    </ul>
+   </div>
+   <div class="footer_list_container">
+    <ul>
+        <li>Coronavirus (COVID-19) FAQS</li>
+        <li>About Booking.com</li>
+        <li>Customer Service Help</li>
+        <li>Partner Help</li>
+        <li>Careers</li>
+        <li>Sustainability</li>
+        <li>Press Center</li>
+        <li>Safety Resource Center</li>
+        <li>Investor Relations</li>
+        <li>Terms & Conditions</li>
+        <li>Partner Dispute</li>
+        <li>How we work</li>
+        <li>Privacy & Cookie Statement</li>
+        <li>MSA Statement </li>
+        <li>Corporate Contact</li>
+    </ul>
+   </div>
+</div>
+
+<div id="Footer_part2"><p>Extranet Login</p></div>
+<div id="Footer_part3"><p>Copyright © 1996-2022 Booking.com™. All rights reserved.</p></div>
+<div id="Footer_part4"><p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p></div>
+
+<div id="Footer_part_5">
+    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="">
+    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="">
+    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="">
+    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="">
+    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="">
+    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="">
+</div>
 </body>
 </html>
 
-<script src="./productPage2.js">
-    
-</script>
+<script src="./productPage2.js"></script>
+<script src="./srcipt/index.js"></script>
