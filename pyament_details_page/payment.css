@@ -301,3 +301,33 @@ p{
 #luggage_side{
     width: 60%;
 }
+
+.boxshadows{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+}
+#check_and_pay{
+    width: 65%;
+    margin-right: 15px;
+}
+#check_and_pay>div{
+    margin: 15px 0px;
+}
+#card_forms{
+    width: 60%;
+}
+#card_name,#card_number,#car_cvv,#card_exprire{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px;
+}
+.boxshadows>h3,.boxshadows>p{
+    line-height: 1.6rem;
+}
+/* {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+} */

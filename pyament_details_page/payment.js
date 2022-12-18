@@ -1,10 +1,11 @@
 
 //  -------------------storage data------------------------------
-let flight_amt=sessionStorage.getItem('flight_amt') || 0;
-let total_person= sessionStorage.getItem('total-person') || 2 ;
+let flight_amt=sessionStorage.getItem('flight_amt') || 20000;
+let destination_part=sessionStorage.getItem('destination_part')
+let total_person= sessionStorage.getItem('total-person') || 1 ;
 // --------------------------total amount variable----------------------
 let flight_amt_totalperson=flight_amt*total_person
-
+let y=flight_amt
 let total_amount=document.querySelectorAll('.total_amount') ;
 let final_amount=document.querySelectorAll('.final_total_amt') ;
 let flight_fare_amount= document.querySelectorAll('.flight_fare')
@@ -31,11 +32,6 @@ let line_border=document.getElementsByClassName('line_border')
 let defaults=document.querySelectorAll('.hello')
 
 // --------------------- render innertext--------------------
-// ------------------------who's flying with us----------------------
-
-let userNumber= document.getElementById('number');
-let userEmail = document.getElementById('email');
-
 flexible_amount_render.innerHTML="" ;
 sessionStorage.setItem('flight_amt',1000)
 
@@ -46,6 +42,7 @@ function forloopfun(dataamounts,keyname) {
 }
 function totalAmountender(dataamounts,keyname,person) {
     for(dataamount of dataamounts){
+        y=(+keyname)+(1589*person)
         dataamount.innerText=+keyname+(1589*person)
     }
 }
@@ -69,8 +66,8 @@ for(tax of tax_fees_amount){
 // 
 // -------------------------tickets selection amount
 standard_total_amount.innerText=flight_amt_totalperson;
-
-flexibele_total_amount.innerText=flight_amt_totalperson+(1589*(+total_person))
+let x=flight_amt_totalperson+(1589*(+total_person))
+flexibele_total_amount.innerText=x
 // ------------------------functions----------------
 
 
@@ -81,6 +78,7 @@ standard_ticket.addEventListener('click',()=>{
     for(let flexible_amount of flexible_amount_render){
         flexible_amount.style.display='none'
     }
+    // y=flight_amt
 })
 
 
@@ -119,14 +117,18 @@ function radioInput(input,style,oppInput){
 // ---------------------------next buttons function for navbar--------------------
 
 // ----------------------------- forms functions----------------------
+// ------------------------who's flying with us----------------------
 
+let userNumber= document.getElementById('number');
+let userEmail = document.getElementById('email');
 
 // ------------------------------------- who's flying--------------------
 
-let renderFrom=document.getElementById('renderFrom')
+function renderFormTraveler(){
+    let renderFrom=document.getElementById('renderFrom')
 renderFrom.innerHTML=`${display().map((el)=>{
     return `<div class="adult-person boxborder border_space margin_top">
-    <form class="forms">                
+    <div class="forms">                
         <div>
             <h3>Adult <span>${el}</span></h3>
             <p>Required</p>
@@ -178,13 +180,14 @@ renderFrom.innerHTML=`${display().map((el)=>{
                 </div>
             </div>
         </div>
-    </form>
+    </div>
 </div>`
+
 }).join("")}`;
 
-let days=document.querySelectorAll('.date');
-let months=document.querySelectorAll('.month');
-let year=document.querySelectorAll('.year')
+}
+
+
 
 function display(){
     let arr=[]
@@ -193,23 +196,58 @@ function display(){
     }
     return arr
 }
-
 let i=0;
 let j=0;
 let k=0;
-next.addEventListener('click',()=>{
-
-    if(k<=2){
+next.addEventListener('click',(e)=>{
+    renderFormTraveler()
+    // renderluggages()
+    let travelerDetails=[]
+    let obj2={
+        useremail: userEmail.value,
+        userNumber: userNumber.value,
+    }
+    renderData(obj2)
+    if(k<=3){
         if(i<=4){
-    
             if(k==1){
-                let obj={
-                    useremail: userEmail.value,
-                    userNumber: userNumber.value,
+                let fname=document.querySelectorAll('.fname')
+                let lname=document.querySelectorAll('.lname')
+                let gender=document.querySelectorAll('.Gender')
+                let days=document.querySelectorAll('.date');
+                let months=document.querySelectorAll('.month');
+                let years=document.querySelectorAll('.year');
+
+                for(let i=0;i<total_person;i++){
+                        obj={
+                            fname:fname[i].value,
+                            lname:lname[i].value,
+                            gender:gender[i].value,
+                            days:days[i].value,
+                            months:months[i].value,
+                            years:years[i].value
+                        }
+                        travelerDetails.push(obj) 
+                    // console.log(obj)      
                 }
-                if(obj.userNumber==""){
+
+                // if(obj.fname[i]==""||obj.lname[i]==""||obj.gender[i]==""||obj.days[i]==""||obj.months[i]==""||obj.years[i]==""||){
+                //     alert("fill the form")
+                // }
+                let finderr=travelerDetails.find((el)=>{
+                    if(el.fname=="" || el.lname=="" || el.gender=="" || el.days=="" || el.months=="" || el.years==""){
+                        return true
+                    }
+                    else{
+                        return false
+                    }
+                })
+                console.log(finderr)
+                // || obj2.userNumber=="" || obj2.useremail==""
+                if(finderr==undefined){
                     alert("fill the form")
-                }else{
+                }
+                else{
                     defaults[k].style.display='none'
                     defaults[k+1].style.display="flex";
                     i=i+2;
@@ -218,8 +256,22 @@ next.addEventListener('click',()=>{
                     j++;
                     after.style.setProperty('--boxAfterBackColor','#006ce4')
                     k++
+                    // travelerDetails.push(obj);
+                    // renderTravelers(travelerDetails)
                 }
-            }else{
+            }else if(k==2){
+            
+                e.target.innerText='PAY';
+                i=i+2;
+                top_nav_circle[i].children[0].classList.add('circle_color');
+                let after=line_border[j];
+                j++;
+                after.style.setProperty('--boxAfterBackColor','#006ce4')
+                defaults[k].style.display='none'
+                defaults[k+1].style.display="flex";
+                k++
+            }
+            else{
                 i=i+2;
                 top_nav_circle[i].children[0].classList.add('circle_color');
                 let after=line_border[j];
@@ -230,9 +282,14 @@ next.addEventListener('click',()=>{
                 defaults[k+1].style.display="flex";
                 k++
             }
+        }else{
+            alert('Payment has been successfull')
+            window.location.href="../index.html"
         }
+        // console.log(travelerDetails)
     }
 })
+
 
 // -----------------------------bag function----------------------------
 
@@ -242,18 +299,22 @@ let no_checked_bags_input= document.getElementById('no_checked_bags');
 let luggage_divs= document.getElementById('luggage_div')
 let no_luggage_divs= document.getElementById('no_luggage_div')
 
-// luggage_amounts_render.innerHTML="";
-
 luggage_divs.addEventListener('click',()=>{
+
     radioInput(checked_bags_input,luggage_divs,no_luggage_divs)
     for(let luggage_amounts of luggage_amounts_render){
         luggage_amounts.style.display='none'
     }
+    for(dataamount of final_amount){
+        // let x= dataamount.innerText;
+        dataamount.innerText= (+y)
+    }
+    
 })
 
 no_luggage_divs.addEventListener('click',()=>{
     radioInput(no_checked_bags_input,no_luggage_divs,luggage_divs)
-    addluggaeAmt(final_amount,total_person)
+
     for(let luggage_amounts of luggage_amounts_render){
 
         luggage_amounts.style.display='flex'
@@ -262,6 +323,12 @@ no_luggage_divs.addEventListener('click',()=>{
         <p class="amount_color">INR<span class="tax_fees">${4425.60}</span></p>`
 
     }
+
+    for(dataamount of final_amount){
+        // let x= dataamount.innerText;
+        dataamount.innerText= (+y) + (4425.60*total_person)
+    }
+    luggageDetails()
 })
 
 checked_bags_input.addEventListener('click',()=>{
@@ -273,17 +340,29 @@ no_checked_bags_input.addEventListener('click',()=>{
     luggage_divs.style.border="1px solid black"
 })
 
-function addluggaeAmt(dataamounts,person){
-        for(dataamount of dataamounts){
-            dataamount.innerText=(+dataamount.innerText)+(4425.60*person)
-        }
+function renderData(obj){
+    let contactdetails=document.getElementById('contactdetails')
+    contactdetails.innerHTML=`
+    <p>${obj.userNumber}</p
+    <p>${obj.useremail}</p>
+    `
+}
+function luggageDetails(){
+    let travelerluggae=document.getElementById('travelerluggae')
+    travelerluggae.innerHTML=`
+    <img class="icons_width" src="https://cdn-icons-png.flaticon.com/512/3313/3313637.png " alt="">
+    <p>1 carry-on bag Max weight 20 kg</p>`
 }
 
+function renderTravelers(arr){
+    let contactdetails=document.getElementById('contactdetails')
+    contactdetails.innerHTML=arr.map((el)=>{
+        return`<div>
+        <img class="icons_width" src="https://cdn-icons-png.flaticon.com/512/747/747376.png " alt="userimg">
+        <p>${el.fname} ${el.lname}</p><div>`
+    })
+} 
 
-function storeData(){
-    let arr=[];
-    let obj={}
-    for(let i=1;i<=count;i++){
-        
-    }
-}
+// --------------------------header-------------------
+let destination=document.getElementById('destination_name')
+destination.innerHTML=`${destination_part.name} <span><i class="fa-solid fa-right-left"></i></span> ${destination_part.reach}`
