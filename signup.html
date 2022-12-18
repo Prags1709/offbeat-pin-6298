@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="stylesheet" href="Signup.css" />
-    <title>Sign in & Sign up </title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <title>Signup</title>
 </head>
 
 <body>
@@ -23,126 +25,87 @@
                         Language</span></div>
                 <div class="nav_icon tooltip"><img src="./images/customer-support.png" alt=""><span
                         class="tooltiptext">Help and Support</span></div>
+                        <button class="login_sign_btn" id="login_sign_btn1">List your Property</button>
+                        <button class="login_sign_btn">Register</button>
+                        <button class="login_sign_btn">Sign In</button>        
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="forms-container">
-            <div class="signin-signup">
-                <form action="#" class="sign-up-form">
-                    <h2 class="title">Sign up</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input id="user" type="text" placeholder="Username" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input id="email" type="email" placeholder="Email" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input id="pass" type="password" placeholder="Password" />
-                    </div>
-                    <input type="submit" class="btn" value="Sign up" />
-                    <p class="social-text">Or Sign up with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </form>
-                <form action="#" class="sign-in-form">
-                    <h2 class="title">Sign in</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
-                    </div>
-                    <input type="submit" value="Login" class="btn solid" />
-                    <p class="social-text">Or Sign in with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </form>
-            </div>
+
+    <div class="login">
+
+        <div class="form">
+            <h2 class="formheading">Create an account</h2>
+            <form action="">
+                <label >Name</label>
+                <input class="input" placeholder="Enter your name" type="text" id="name" required >
+
+                <label for="">Mobile</label>
+                <input class="input" type="number" id="number" placeholder="Enter your Number" required>
+                <label>Email address</label>
+                <input class="input" type="email" placeholder="Enter email" id="email" required />
+                <label>Create Password</label>
+                <input class="input" type="password" placeholder="Create password" id="pass" required/>
+
+                <input class="button" id= "login_btn" type="submit" value="Sign Up">
+            </form>
         </div>
 
-        <div class="panels-container">
-            <div class="panel left-panel">
-                <div class="content">
-                    <h3>New here ?</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-                        ex ratione. Aliquid!
-                    </p>
-                    <button class="btn transparent" id="sign-up-btn">
-                        Sign up
-                    </button>
-                </div>
-                <img src="./imag/undraw_Aircraft_re_m05i.png" style="margin-bottom: 5%;padding-right: 20%;width: 100%;"
-                    class="image" alt="" />
-            </div>
-            <div class="panel right-panel">
-                <div class="content">
-                    <h3>One of us ?</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                        laboriosam ad deleniti.
-                    </p>
-                    <button class="btn transparent" id="sign-in-btn">
-                        Sign in
-                    </button>
-                </div>
-                <img src="./imag/undraw_Reminder_re_fe15.png" style="width: 70%; margin-bottom: 5%;" class="image"
+        <div class="line">
+            <hr class="hr" />
+            <p class="p">or use one of these options</p>
+            <hr class="hr" />
+        </div>
+
+        <div class="authlogin">
+            <button class="google">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC"
+                    alt="img" />
+            </button>
+
+            <button class="google">
+                <img class="googleimage"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC-KxlZ9aqVMbPO3Ll49gBa3Ro245LV3KdLR2w4kQO4gy_PYVGJTPv4mBaJmVRNK4WPp4&usqp=CAU"
+                alt="" />
+            </button>
+
+            <button class="google">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/198px-Instagram_logo_2016.svg.png?20210403190622"
                     alt="" />
-            </div>
+            </button>
+        </div>
+        <b>
+        <p style="color:rgb(0, 94, 255)">More ways to sign in<p>
+        </b>   
+        <div class="line1">
+            <hr />
+            <p class="p1">
+                By signing in or creating an account, you agree with our
+                <a href="" style="text-decoration: none"><span style=color:blue;>Terms & Conditions</span></a> and
+                <a href="" style="text-decoration: none"><span style=color:blue;>Privacy Statement</span></a>
+            </p>
+            <hr />
+        </div>
+        <div class="line1">
+            <p class="p1">All rights reserved.</p>
+            <p class="p1">Copyright (2006-2022) - Booking.com™</p>
         </div>
     </div>
-    <script>
-        const sign_in_btn = document.querySelector("#sign-in-btn");
-        const sign_up_btn = document.querySelector("#sign-up-btn");
-        const container = document.querySelector(".container");
 
-        sign_up_btn.addEventListener("click", () => {
-            container.classList.add("sign-up-mode");
-        });
-
-        sign_in_btn.addEventListener("click", () => {
-            container.classList.remove("sign-up-mode");
-        });
-        document.querySelector("form").addEventListener("submit", subfun);
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit", subfun);
         var userStack = JSON.parse(localStorage.getItem("userDataBase")) || [];
         function subfun(eve) {
             eve.preventDefault();
-            var user = document.querySelector("#user").value;
+            var name = document.querySelector("#name").value;
+            var number = document.querySelector("#number").value;
             var email = document.querySelector("#email").value;
             var pass = document.querySelector("#pass").value;
 
             var userData = {
-                userName: user,
+                name:name,
+                number:number,
                 emailAdd: email,
                 passwd: pass,
 
@@ -153,7 +116,5 @@
             alert("signup success");
             window.location.href = "login.html";
         }
-    </script>
-</body>
-
+</script>
 </html>
