@@ -215,7 +215,7 @@ label{
 /* -----------------------------contact info end------------- */
 
 /* ----------------------adult contact info--------------- */
-#forms input[type="text"],#Gender
+.forms input[type="text"],.Gender
 {
     box-sizing: border-box;
     width: 95%;
@@ -223,7 +223,7 @@ label{
     outline-color:#004cb8;
     text-align: left;
 }
-#date,#month,#year{
+.date,.month,.year{
     box-sizing: border-box;
     width: 30%;
     padding: 12px 0px;
@@ -256,7 +256,7 @@ label{
 }
 /* ----------------------------------------luggage part------------------------------ */
 .luggage_included{
-    width: 90%;
+    width: 100%;
     display: flex;
 }
 .flex_icons{
@@ -297,4 +297,7 @@ p{
 .luggage_border>div>div>p{
     padding-left: 10px;
     padding-right:2rem ;
+}
+#luggage_side{
+    width: 60%;
 }

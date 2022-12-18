@@ -141,6 +141,8 @@
                             <p>Taxes and fees</p>
                             <p class="amount_color">INR<span class="tax_fees">11000</span></p>
                         </div>   
+                        <div class="flexible_amount_render total_amt">
+                        </div> 
                         <div class="total_amt" style="margin-top: 20px;">
                             <h2>Total</h2>
                             <h2 class="amount_color">INR<span class="final_total_amt">000</span></h2>
@@ -171,12 +173,12 @@
                             </div>
                             <div>
                                 <label for="emain">Contact email</label><br>
-                                <input type="email" required><br>
+                                <input type="email" id="email" required><br>
                                 <p>We'll send your flight confirmation here</p><br>
                             </div>
                             <div>
                                 <label for="number">Phone number</label><br>
-                                <input type="number" name="" id=""><br>
+                                <input type="number" name="" id="number" required><br>
                             </div>
                             <div>
                                 <input name="markup" type="checkbox"
@@ -184,63 +186,9 @@
                                 <label for="free_maseeges">Get free text message updates about your flight</label>
                             </div>
                         </div>
-    <!-------------------------------- forms------------------ -->
-                        <div class="adult-person boxborder border_space margin_top">
-                            <form id="forms">                
-                                <div>
-                                    <h3>Adult <span>1</span></h3>
-                                    <p>Required</p>
-                                    <br>
-                                </div>
-    <!-- --------------------first name and last name ------------------------->
-                                <div class="display_flex">
-                                    <div>
-                                        <label>First names</label><br>
-                                        <input type="text" id="fname"><br>
-                                        <p>Enter exactly what's written on this traveler's travel document</p>
-                                    </div>
-                                    <div>
-                                        <label>Last names</label><br>
-                                        <input type="text" id="lname"> <br>
-                                        <p>Enter exactly what's written on this traveler's travel document</p>                 
-                                    </div>
-                                </div>
-    <!-- ---------------------gender date month year----------------- -->
-                                <div class="display_flex">
-                                    <div style="width: 50%;">
-                                        <label>Gender specified on your travel document*</label>
-                                        <select id="Gender">
-                                            <option value="">Select your gender</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                        </select>                                                                                  
-                                    </div>
-                                    <div style="width: 50%;">
-                                        <label for="Date of birth">Date of birth</label>
-                                        <div class="display_flex">
-                                            <input type="number" id="date" placeholder="DD">
-                                            <select id="month">
-                                                <option value="">MM</option>
-                                                <option value="jan">01</option>
-                                                <option value="feb">02</option>
-                                                <option value="mar">03</option>
-                                                <option value="apr">04</option>
-                                                <option value="may">05</option>
-                                                <option value="jun">06</option>
-                                                <option value="jul">07</option>
-                                                <option value="aug">08</option>
-                                                <option value="sep">09</option>                                    
-                                                <option value="oct">10</option>
-                                                <option value="nov">11</option>
-                                                <option value="dec">13</option>
-                                            </select> 
-                                            <input type="number" id="year" placeholder="year">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="children"></div>
+    <!-------------------------------- forms apeend------------------ -->
+                            <div id="renderFrom"></div>
+                       
                     </div>
     <!--------------- --------------render amount------------------------ -->
                     <div class="render_amount_side">
@@ -255,6 +203,8 @@
                         <div class="total_amt">
                             <p>Taxes and fees</p>
                             <p class="amount_color">INR<span class="tax_fees">11000</span></p>
+                        </div> 
+                        <div class="flexible_amount_render total_amt">
                         </div>   
                         <div class="total_amt" style="margin-top: 20px;">
                             <h2>Total</h2>
@@ -277,7 +227,7 @@
         <div class="no_visible_data luggages_data hello"> 
             <div class="margin_side margin_top">
                 <div class="display_flex">
-                    <div>
+                    <div id="luggage_side">
                         <h3 class="gap_div lines">Luggage</h3>
                         <h4 class="gap_2line">Included baggage</h4>
                         <p>Already included in the price</p>
@@ -301,7 +251,7 @@
                         <h5 class="margin_top">Checked bags</h5>
                         <p class="gap_2line"> <span>person name</span> (adult)</p>
                         <div class="luggage_border">                            
-                            <div>
+                            <div id="luggage_div" style="border: 2px solid blue">
                                 <div>
                                     <input name="luggage" type="radio"
                                     value="no_bags" id="checked_bags" checked="">
@@ -309,7 +259,7 @@
                                 </div>
                                 <img src="https://cdn-icons-png.flaticon.com/512/3150/3150913.png " alt="">
                             </div>
-                            <div>
+                            <div id="no_luggage_div">
                                 <div>
                                     <input name="luggage" type="radio"
                                     value="no_bags" id="no_checked_bags">
@@ -333,7 +283,10 @@
                         <div class="total_amt">
                             <p>Taxes and fees</p>
                             <p class="amount_color">INR<span class="tax_fees">11000</span></p>
-                        </div>   
+                        </div>
+                        <div class="flexible_amount_render total_amt">
+                        </div> 
+                        <div class="luggage_amounts_render total_amt"></div>
                         <div class="total_amt" style="margin-top: 20px;">
                             <h2>Total</h2>
                             <h2 class="amount_color">INR<span class="final_total_amt">000</span></h2>
@@ -344,7 +297,7 @@
                             <div><h6>Genius</h6><span>Trip savings</span></div>
                             <p class="amount_color">Save 10% on your stay</p>
                             <p>Once you book your flights, enjoy a 10% discount at participating Genius properties worldwide by signing in to your account.</p>
-                        </div>                          
+                        </div>                        
                     </div>
                 </div>
             </div>           

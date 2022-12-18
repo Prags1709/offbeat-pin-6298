@@ -5,7 +5,7 @@
         {
             "id":1,
             "name":"IndiGo",
-            "price":20000,
+            "price":40000,
             "depature":"AMD",
             "arrival":"BBI",
             "depature_time":"09:15 am",
