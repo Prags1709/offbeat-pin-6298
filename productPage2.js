@@ -641,7 +641,7 @@ return `
 
 //console.log(new_arr)
 
-add.innerHTML = new_arr
+add.innerHTML = new_arr.join(" ")
 } ;
 
 //-------Sort function------------//
