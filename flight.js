@@ -1,3 +1,9 @@
+let north_goa = document.getElementById("gotonorthgoa").addEventListener("click",()=>{
+  window.location.href = "flights.voyage.html"
+})
+
+
+
 // owl-carousal------------------------------------------------------------------------
 
 let count = 0;
