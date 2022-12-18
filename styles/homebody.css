@@ -624,6 +624,7 @@
     width: 300px;
     height: 25px;
     border: 1px solid rgb(198, 154, 240);
+    outline: none;
  }
  #deals_container_input:hover{
     cursor: pointer;
@@ -1281,4 +1282,301 @@
 }
 
 /******************* Destinations we love ****************************/
+
+#destination_categories{
+  border: 0px solid black;
+  width: 80%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+#destination_categories div{
+  border: 0px solid red;
+  width:100px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #262626;
+}
+#destination_categories div:nth-child(1){
+  color: #0071c2;
+  border: 1px solid #0071c2;
+  background-color: #ecf4f8;
+}
+#destination_categories div:nth-child(2){
+  margin-left: 20px;
+}
+#destination_categories div:nth-child(3){
+  width: 150px;
+  margin-left: 20px;
+}
+#destination_categories div:hover{
+  cursor: pointer;
+  background-color:#d3d6d8;
+}
+
+/*********** Destinations by categories ************/
+#destinations{
+  /* border:1px solid black; */
+  width:80%;
+  height:350px;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#destinations_categorie1{
+  /* border:1px solid blue; */
+  width:100%;
+  height:300px;
+  /* margin: auto; */
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.des_cat{
+  /* border:1px solid green; */
+  width:200px;
+  height: 250px;
+}
+.des_head{
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #262626;
+}
+.des_head:hover{
+  text-decoration: underline 1px solid black;
+  cursor: pointer;
+}
+.dest_desc{
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b6b6b;
+  margin-top: -10px;
+}
+
+#destinations_categorie2{
+  /* border:1px solid blue; */
+  width:100%;
+  height:500px;
+  margin: auto;
+  margin-top:10px;
+  display: none;
+  /* display: ; */
+}
+
+#destinations_categorie3{
+  /* border:1px solid blue; */
+  width:100%;
+  height:300px;
+  margin: auto;
+  margin-top:10px;
+  display: none;
+  
+}
+#destinations_categorie2 div{
+  /* border: 1px solid green; */
+  width:280px;
+  height: 300px;
+  margin-left: 30px;
+}
+#destinations_categorie2 div:nth-child(3){
+  margin-left: 50px;
+}
+
+/******************* Lower Search Bar ******************/
+
+#lower_seachbar_container{
+  /* border:1px solid black; */
+  width:100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00224f;
+}
+
+#subs_head{
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  color: #fff;
+  line-height: none;
+}
+#subs_desc{
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #bdbdbd;
+  line-height: none;
+  margin-top: -50px;
+}
+#subs_mail{
+  width:400px;
+  height: 40px;
+  border-radius: 5px;
+}
+#subs_mail::placeholder{
+  font-size: 16px;
+}
+#subs_btn{
+  width:150px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0071c2;
+  font-size: 16px;
+  color: #fff;
+}
+#subs_btn:hover{
+  cursor: pointer;
+  background-color: #afcaf0;
+  color: #262626;
+}
+
+/********************* List Your Property ************************/
+#lyp{
+  /* border:1px solid black; */
+  width: 100%;
+  height: 130px;
+  background-color: #003580;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#lyp_btn{
+  width:150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-size: 14px;
+  background-color: #00224f;
+  color: #fff;
+}
+#lyp_btn:hover{
+  cursor: pointer;
+  background-color:#8bafe0;
+}
+#lyp_line{
+  width: 100%;
+  border: 0.5px solid white;
+}
+#lyp_msc{
+  /* border: 1px solid yellow; */
+  width: 70%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+#lyp_msc p{
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: underline 1px solid #ffff;
+}
+#lyp_msc p:hover{
+  cursor: pointer;
+}
+#texttoshow{
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* Footer_part1 */
+#Footer_part1{
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.footer_list_container{
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  width: 250px;
+  height: 450px;
+}
+
+.footer_list_container ul li{
+  list-style: none;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0071c2;
+}
+.footer_list_container ul li:hover{
+  cursor: pointer;
+  color: red;
+}
+
+#Footer_part2{
+  /* border: 1px solid red; */
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Footer_part2 p{
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #0071c2;
+}
+#Footer_part2 p:hover{
+  cursor: pointer;
+  color: red;
+}
+#Footer_part3{
+  /* border: 1px solid green; */
+  width:60%;
+}
+#Footer_part3 p{
+  margin-left: 90px;
+}
+#Footer_part4{
+  /* border: 1px solid green; */
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Footer_part4 p{
+   font-style: normal;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 14px;
+   color: #6b6b6b;
+}
+
+#Footer_part_5{
+  /* border: 1px solid green;  */
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
 

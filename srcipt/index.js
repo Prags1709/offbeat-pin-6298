@@ -1,12 +1,51 @@
-
-let expanddiv = document.getElementById("corona_support")
-expanddiv.addEventListener("click", function(){
-
-    console.log("hello");
-
+let home = document.getElementById("logo_img").addEventListener("click", function(){
+      
+    window.location.href = "index.html";
 });
 
-////////////////////////////////////////////////////////
+let getRegistered = document.getElementById("Reg_bttn").addEventListener("click", ()=>{
+   window.location.href = "signup.html";
+})
+
+let login = document.getElementById("Sign_bttn").addEventListener("click", ()=>{
+   window.location.href = "login.html";
+})
+
+let bookAplane = document.getElementById("letsFly").addEventListener("click", ()=>{
+   window.location.href = "flight.html";
+})
+
+// ////////////////////////////////////////////////////////////////
+
+// let user = JSON.parse(localStorage.getItem("userDataBase"));
+// console.log(user);
+
+// let person = user[0]["userName"];
+// console.log(person);
+
+  // if (user != null) {
+  //   let log_in = document.querySelector("#Reg_bttn");
+  //   let log_out = document.querySelector("#logout_bttn");
+  //   let sign_in = document.querySelector("#Sign_bttn");
+
+  //   sign_in.style.display = "none";
+  //   log_out.style.display = "inline-block";
+
+  //   log_in.innerHTML = `Welcome, ${name}`;
+  //   log_in.style.width = "150px"
+
+    
+  //   log_out.onclick = () => {
+  //     logout();
+  //     window.location.reload();
+  //   };
+  // }
+
+  // function logout(){
+  //   localStorage.removeItem("userDataBase");
+  // }
+
+///////////////////////offer carousel/////////////////////////////////
 
 let count1 = 0;
 document.querySelector("#ltarrow").onclick = () => {
@@ -26,12 +65,10 @@ document.querySelector("#rtarrow").onclick = () => {
   }
   count1++;
   let val = count1 * 40;
-  document.querySelector(
-    ".container"
-  ).style.transform = `translateX(-${val}vw)`;
+  document.querySelector(".container").style.transform = `translateX(-${val}vw)`;
 };
 
-////////////////////////////////////////////////////////////////////////
+//////////////////////////////Explore carousel//////////////////////////////////////////
 
 let count2 = 0;
 document.querySelector("#ltexarrow").onclick = () => {
@@ -41,7 +78,7 @@ document.querySelector("#ltexarrow").onclick = () => {
     return;
   }
   count2--;
-  let val = count2 * 100;
+  let val = count2 * 180;
   document.querySelector("#explore_container").style.transform = `translateX(-${val}px)`;
 };
 
@@ -50,11 +87,11 @@ document.querySelector("#rtexarrow").onclick = () => {
     return;
   }
   count2++;
-  let val = count2 * 100;
+  let val = count2 * 180;
   document.querySelector("#explore_container").style.transform = `translateX(-${val}px)`;
 };
 
-//////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////Browse by property type//////////////////////////////////////////////////
 
 let count3 = 0;
 document.querySelector("#ltbrarrow").onclick = () => {
@@ -77,7 +114,7 @@ document.querySelector("#rtbrarrow").onclick = () => {
   document.querySelector("#browse_container").style.transform = `translateX(-${val}px)`;
 };
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////Travel around Europe//////////////////////////////////////////////////////////////
 
 let count4 = 0;
 document.querySelector("#ltTRarrow").onclick = () => {
@@ -186,6 +223,7 @@ document.querySelector("#ltCTarrow").onclick = () => {
 };
 
 document.querySelector("#rtCTarrow").onclick = () => {
+  console.log("clicked");
   if (count8 > 4) {
     return;
   }
@@ -193,6 +231,71 @@ document.querySelector("#rtCTarrow").onclick = () => {
   let val = count8 * 60;
   document.querySelector("#travllers_container").style.transform = `translateX(-${val}px)`;
 };
+
+///////////////////////////////////////////////Destinations we love////////////////////////////////////////////////////
+let d1 = document.getElementById("destinations_categorie1");
+let d2 = document.getElementById("destinations_categorie2");
+let d3 = document.getElementById("destinations_categorie3");
+
+let cate1 = document.getElementById("des_cate1")
+let cate2 = document.getElementById("des_cate2")
+let cate3 = document.getElementById("des_cate3")
+
+cate1.addEventListener("click", function(){
+  console.log("clicked1");
+  d1.style.display = "inline-flex";
+  d3.style.display = "none"
+  d2.style.display = "none";
+
+  cate1.style.color = "#0071c2";
+  cate1.style.background = "#ecf4f8";
+  cate1.style.border = "1px solid #0071c2";
+
+  cate2.style.color = "#262626";
+  cate2.style.background = "none";
+  cate2.style.border = "none";
+
+  cate3.style.color = "#262626";
+  cate3.style.background = "none";
+  cate3.style.border = "none";
+})
+cate2.addEventListener("click", function(){
+  console.log("clicked2");
+  d1.style.display = "none";
+  d3.style.display = "none"
+  d2.style.display = "inline-flex";
+  
+  cate2.style.color = "#0071c2";
+  cate2.style.background = "#ecf4f8";
+  cate2.style.border = "1px solid #0071c2";
+
+  cate1.style.color = "#262626";
+  cate1.style.background = "none";
+  cate1.style.border = "none";
+
+  cate3.style.color = "#262626";
+  cate3.style.background = "none";
+  cate3.style.border = "none";
+})
+cate3.addEventListener("click", function(){
+  console.log("clicked3");
+  d1.style.display = "none";
+  d3.style.display = "inline-flex"
+  d2.style.display = "none";
+
+  cate3.style.color = "#0071c2";
+  cate3.style.background = "#ecf4f8";
+  cate3.style.border = "1px solid #0071c2";
+
+  cate1.style.color = "#262626";
+  cate1.style.background = "none";
+  cate1.style.border = "none";
+
+  cate2.style.color = "#262626";
+  cate2.style.background = "none";
+  cate2.style.border = "none";
+})
+
 
 
 
