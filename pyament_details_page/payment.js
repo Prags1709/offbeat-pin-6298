@@ -365,4 +365,4 @@ function renderTravelers(arr){
 
 // --------------------------header-------------------
 let destination=document.getElementById('destination_name')
-destination.innerHTML=`${destination_part.name} <span><i class="fa-solid fa-right-left"></i></span> ${destination_part.reach}`
+destination.innerHTML=`${destination_part[departure_place]} <span><i class="fa-solid fa-right-left"></i></span> ${destination_part[arrival_place]}`;

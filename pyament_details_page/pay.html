@@ -5,13 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage Travels</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <title>Document</title>
 </head>
 
 <body>
     <header>
+        <div id="navbar_container">
+            <div id="navbar">
+                <div id="nav_left">
+                    <img src="../images/Travel Logo.gif" id="logo_img" style="width:100px; height:90px" />
+                </div>
+                <div id="nav_right">
+                    <div class="nav_icon tooltip"><img src="../images/get-money.png" alt=""><span class="tooltiptext">Choose Your Currency</span></div>
+                    <div class="nav_icon tooltip"><img src="../images/india.png" alt=""><span class="tooltiptext">Select Your Language</span></div>
+                    <div class="nav_icon tooltip"><img src="../images/customer-support.png" alt=""><span class="tooltiptext">Help and Support</span></div>
+                    <button class="login_sign_btn" id="login_sign_btn1">List your Property</button>
+                    <div><img id="loginface" src="../images/user.png"></div>
+                    <button id="Reg_bttn" class="login_sign_btn">Register</button>
+                    <button id="Sign_bttn" class="login_sign_btn">Sign In</button>
+                    <button id="logout_bttn" class="login_sign_btn">Logout</button>
+                </div>
+            </div>
+        </div>
         <!-- ---------------Top Nav Bar-------------------->
         <div id="bottom_Nav_Bar" class="margin_side">
             <div class="child_bottom_nav_bar">
@@ -43,7 +62,7 @@
             <div class="child_bottom_nav_bar line_border"></div> -->
 
             <div class="child_bottom_nav_bar">
-                <div class="mark_circle">5</div>
+                <div class="mark_circle">4</div>
                 <p class="division_section">Check and pay</p>
             </div>
         </div>
@@ -339,20 +358,20 @@
                             <form id="card_forms">
                                 <div>
                                     <label>Name on card</label> <br>
-                                    <input type="text" id="card_name">
+                                    <input type="text" id="card_name" placeholder="Enter Name On The Card">
                                 </div>
                                 <div>
                                     <label>Card Number</label> <br>
-                                    <input type="number" id="card_number">
+                                    <input type="number" id="card_number" placeholder="Enter Card Number">
                                 </div>
                                 <div class="display_flex">
                                     <div>
                                         <label>Expiration Date</label><br>
-                                        <input type="number" id="card_exprire">
+                                        <input type="text" id="card_exprire" placeholder="MM/YYYY">
                                     </div>
                                     <div>
                                         <label>CVV</label><br>
-                                        <input type="text" name="" id="car_cvv">
+                                        <input type="password" name="" id="car_cvv" placeholder="CVV">
                                     </div>
                                 </div>
                             </form>
@@ -399,5 +418,6 @@
 
 </html>
 <script src="payment.js"></script>
+<script src="../srcipt/index.js"></script>
 
 

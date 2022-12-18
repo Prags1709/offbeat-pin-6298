@@ -735,7 +735,8 @@ for(let filterbtn of filter_flights){
         })
         renderlist(Onestop)
       }else{
-        renderlist(data)
+        renderlist(data);
+        window.location.reload();
       }
 
     })
