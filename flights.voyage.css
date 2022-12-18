@@ -115,7 +115,7 @@ form{
 #details_flight-timing>div:nth-child(3){
   text-align: right;
 }
-#totalprice_btn{
+.totalprice_btn{
   width: 200px;
   height: 35px;
   border-radius: 7px;
@@ -123,7 +123,7 @@ form{
   background-color:white;
   color: rgb(72,111,229);
 }
-#totalprice_btn:hover{
+.totalprice_btn:hover{
   background-color: lightblue;
 }
 #total-price>p{

@@ -257,6 +257,7 @@ h6{
   
 }
 #location_search{
+  width: 990px;
   border: 3px solid rgb(255,210,97);
   margin-top: 20px;
   background-color: rgb(255,210,97);
