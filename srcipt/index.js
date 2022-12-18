@@ -15,6 +15,14 @@ let bookAplane = document.getElementById("letsFly").addEventListener("click", ()
    window.location.href = "flight.html";
 })
 
+let letsgoGoa = document.getElementById("gotogoa").addEventListener("click", ()=>{
+  window.location.href = "productpage.html";
+})
+
+let gotodelhi = document.getElementById("gotodelhi").addEventListener("click", ()=>{
+   window.location.href = "ProductPage2.html";
+})
+
 // ////////////////////////////////////////////////////////////////
 
 // let user = JSON.parse(localStorage.getItem("userDataBase"));
