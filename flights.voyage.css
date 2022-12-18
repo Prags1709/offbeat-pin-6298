@@ -69,31 +69,44 @@ form{
 
 }
 #flight-timing{
-  border-right: 1px solid lightgrey;
+  /* border-right: 1px solid lightgrey; */
   display: flex;
   gap: 20px;
   padding-right: 20px;
 }
+#flight-timing img{
+  width: 70%;
+}
 
 #total-price{
-  border: 0px solid yellow;
+  /* border: 1px solid yellow; */
   width: 100%;
   text-align: right;
   padding: 10px;
 }
 #details_flight-timing{
-  border: 0px solid black;
+  /* border: 1px solid black; */
   display: flex;
   width: 85%;
   height: 100px;
   align-items: center;
 }
 #img_flight-timing{
-  width: 10%;
-  padding: 5px;
+  width: 200px;
+  /* padding: 5px; */
+}
+#flight_img{
+  border: 0px solid red;
+  width: 100px;
+  height: 100px;
+}
+#flight_img img{
+  width: 100%;
 }
 #img_flight-timing>p{
+  border: 0px solid red;
   margin-top: 10px;
+  text-align: center;
 }
 #details_flight-timing>div:nth-child(2){
   width: 70%;
@@ -102,17 +115,16 @@ form{
 #details_flight-timing>div:nth-child(3){
   text-align: right;
 }
-#total-price>button{
-  border: 1px solid rgb(0,59,149);
-  width: 85%;
-  height: 40px;
+#totalprice_btn{
+  width: 200px;
+  height: 35px;
   border-radius: 7px;
-  margin-top: -10px;
-  background-color: white;
-  color:rgb(0,59,149) ;
+  border: 1px solid rgb(72,111,229);
+  background-color:white;
+  color: rgb(72,111,229);
 }
-#total-price>button:hover{
-  background-color:lightblue;
+#totalprice_btn:hover{
+  background-color: lightblue;
 }
 #total-price>p{
   margin-top: -5px;

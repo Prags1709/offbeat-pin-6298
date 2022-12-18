@@ -342,3 +342,73 @@ faq */
   
 }
 
+/* owl-carousal */
+
+#explore_carousell{
+  /* border: 0px solid black; */
+  width:100%;
+  height: 220px;
+  margin: auto; 
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+#explore_containerr{ 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 500ms; 
+}
+.explore_carousell_img_containerr{
+  width:180px;
+  height:220px;
+  /* border: 1px solid red;   */ 
+}
+.explore_carousell_img_containerr:hover{
+  cursor: pointer;
+}
+.explore_carousell_img_containerr img{
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#ltexarroww, #rtexarroww {
+  top: 50%;
+  border: 0px solid red;
+  height: 40px;
+  width: 40px;
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  background: #fff;
+  color: rgb(133, 126, 126);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+#ltexarroww{
+ left: 0px;
+}
+#ltexarroww:hover{
+  background-color: #8bafe0;
+}
+
+#rtexarroww{
+right: 0px;
+}
+#rtexarroww:hover{
+  background-color: #8bafe0;
+}
+.explore_descc{
+  font-size: medium;
+  font-weight: 100;
+}
+
+
