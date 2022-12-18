@@ -90,6 +90,18 @@ body{
 #logout_bttn{
     display: none;
 }
+#loginface{
+    width:40px;
+    height:40px;
+   display: none;
+}
+#loginface img{
+    width:100%;
+    display: none;
+}
+#loginface:hover{
+    cursor: pointer;
+}
 
 .tooltip {
     position: relative;
