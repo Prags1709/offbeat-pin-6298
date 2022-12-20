@@ -1,8 +1,13 @@
 
 //  -------------------storage data------------------------------
+// let flight_amt=sessionStorage.getItem('flight_amt') || 20000;
+// let destination_part=sessionStorage.getItem('destination_part')
+// let total_person= sessionStorage.getItem('total-person') || 1 ;
+
 let flight_amt=sessionStorage.getItem('flight_amt') || 20000;
-let destination_part=sessionStorage.getItem('destination_part')
-let total_person= sessionStorage.getItem('total-person') || 1 ;
+let destination_part=sessionStorage.getItem('departure_place');
+let arrival_place=sessionStorage.getItem('arrival_place')
+let total_person= sessionStorage.getItem('total-person') || 1
 // --------------------------total amount variable----------------------
 let flight_amt_totalperson=flight_amt*total_person
 let y=flight_amt
@@ -364,5 +369,9 @@ function renderTravelers(arr){
 } 
 
 // --------------------------header-------------------
+// let departure_place=document.getElementById("departure_place]");
+// // let arrival_place=document.getElementById("arrival_place]");
+// destination.innerHTML=`${departure_place} <span><i class="fa-solid fa-right-left"></i></span> ${arrival_place}`;
+
 let destination=document.getElementById('destination_name')
-destination.innerHTML=`${destination_part[departure_place]} <span><i class="fa-solid fa-right-left"></i></span> ${destination_part[arrival_place]}`;
+destination.innerHTML=`${destination_part} <span><i class="fa-solid fa-right-left"></i></span> ${arrival_place}`;

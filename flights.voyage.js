@@ -671,10 +671,14 @@ main.innerHTML = `
          console.log(event.target.dataset.id)
          console.log(data[event.target.dataset.id-1]["price"])
          let finfo_obj = data[event.target.dataset.id-1];
+         let departure_place = data[event.target.dataset.id-1]["departure_place"]; 
          let finfo_price = data[event.target.dataset.id-1]["price"]; 
+         let arrival_place = data[event.target.dataset.id-1]["arrival_place"]; 
 
          sessionStorage.setItem("destination_part", JSON.stringify(finfo_obj));
          sessionStorage.setItem("flight_amt",JSON.stringify(finfo_price));
+         sessionStorage.setItem("arrival_place",JSON.stringify(arrival_place));
+         sessionStorage.setItem("departure_place", JSON.stringify(departure_place));
 
          window.location.href = "./pyament_details_page/pay.html";
          
