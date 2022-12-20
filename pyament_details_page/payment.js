@@ -374,4 +374,4 @@ function renderTravelers(arr){
 // destination.innerHTML=`${departure_place} <span><i class="fa-solid fa-right-left"></i></span> ${arrival_place}`;
 
 let destination=document.getElementById('destination_name')
-destination.innerHTML=`${destination_part} <span><i class="fa-solid fa-right-left"></i></span> ${arrival_place}`;
+destination.innerHTML=`${destination_part.replace(/"/g, '')} <span><i class="fa-solid fa-right-left"></i></span> ${arrival_place.replace(/"/g, '')}`;
